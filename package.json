@@ -1,0 +1,41 @@
+{
+  "name": "delhi-metro-3d",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "eslint .",
+    "data:fetch": "node scripts/fetch-osm.mjs",
+    "data:build": "node scripts/build-data.mjs",
+    "data:validate": "node scripts/validate.mjs",
+    "data:city:fetch": "node scripts/fetch-city-osm.mjs",
+    "data:city:build": "node scripts/build-city.mjs"
+  },
+  "dependencies": {
+    "@react-three/drei": "^10.7.7",
+    "@react-three/fiber": "^9.6.1",
+    "@react-three/postprocessing": "^3.0.4",
+    "framer-motion": "^12.42.2",
+    "leva": "^0.10.1",
+    "lucide-react": "^1.23.0",
+    "next": "^16.2.10",
+    "react": "^19.2.7",
+    "react-dom": "^19.2.7",
+    "three": "^0.185.1",
+    "zustand": "^5.0.14"
+  },
+  "devDependencies": {
+    "@eslint/eslintrc": "^3.3.5",
+    "@tailwindcss/postcss": "^4.3.2",
+    "@types/node": "^26.1.0",
+    "@types/react": "^19.2.17",
+    "@types/react-dom": "^19.2.3",
+    "@types/three": "^0.185.0",
+    "eslint": "^9.39.4",
+    "eslint-config-next": "^16.2.10",
+    "tailwindcss": "^4.3.2",
+    "typescript": "^6.0.3"
+  }
+}

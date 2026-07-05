@@ -1,0 +1,203 @@
+[
+  {
+    "name": "Anand Vihar",
+    "id": "anand-vihar",
+    "lines": [
+      "Blue Line Branch",
+      "Pink Line"
+    ]
+  },
+  {
+    "name": "Ashok Park Main",
+    "id": "ashok-park-main",
+    "lines": [
+      "Green Line",
+      "Green Line Branch"
+    ]
+  },
+  {
+    "name": "Azadpur",
+    "id": "azadpur",
+    "lines": [
+      "Yellow Line",
+      "Pink Line"
+    ]
+  },
+  {
+    "name": "Botanical Garden",
+    "id": "botanical-garden",
+    "lines": [
+      "Blue Line",
+      "Magenta Line"
+    ]
+  },
+  {
+    "name": "Central Secretariat",
+    "id": "central-secretariat",
+    "lines": [
+      "Yellow Line",
+      "Violet Line"
+    ]
+  },
+  {
+    "name": "Dilli Haat - INA",
+    "id": "dilli-haat-ina",
+    "lines": [
+      "Yellow Line",
+      "Pink Line"
+    ]
+  },
+  {
+    "name": "Dwarka - Kakrola",
+    "id": "dwarka-kakrola",
+    "lines": [
+      "Blue Line",
+      "Grey Line"
+    ]
+  },
+  {
+    "name": "Dwarka Sector 21",
+    "id": "dwarka-sector-21",
+    "lines": [
+      "Blue Line",
+      "Airport Express"
+    ]
+  },
+  {
+    "name": "Hauz Khas",
+    "id": "hauz-khas",
+    "lines": [
+      "Yellow Line",
+      "Magenta Line"
+    ]
+  },
+  {
+    "name": "Inderlok",
+    "id": "inderlok",
+    "lines": [
+      "Red Line",
+      "Green Line"
+    ]
+  },
+  {
+    "name": "Janakpuri West",
+    "id": "janakpuri-west",
+    "lines": [
+      "Blue Line",
+      "Magenta Line"
+    ]
+  },
+  {
+    "name": "Kalkaji Mandir",
+    "id": "kalkaji-mandir",
+    "lines": [
+      "Violet Line",
+      "Magenta Line"
+    ]
+  },
+  {
+    "name": "Karkarduma",
+    "id": "karkarduma",
+    "lines": [
+      "Blue Line Branch",
+      "Pink Line"
+    ]
+  },
+  {
+    "name": "Kashmere Gate",
+    "id": "kashmere-gate",
+    "lines": [
+      "Red Line",
+      "Yellow Line",
+      "Violet Line"
+    ]
+  },
+  {
+    "name": "Kirti Nagar",
+    "id": "kirti-nagar",
+    "lines": [
+      "Blue Line",
+      "Green Line Branch"
+    ]
+  },
+  {
+    "name": "Lajpat Nagar",
+    "id": "lajpat-nagar",
+    "lines": [
+      "Violet Line",
+      "Pink Line"
+    ]
+  },
+  {
+    "name": "Mandi House",
+    "id": "mandi-house",
+    "lines": [
+      "Blue Line",
+      "Violet Line"
+    ]
+  },
+  {
+    "name": "Mayur Vihar - I",
+    "id": "mayur-vihar-i",
+    "lines": [
+      "Blue Line",
+      "Pink Line"
+    ]
+  },
+  {
+    "name": "Netaji Subhash Place",
+    "id": "netaji-subhash-place",
+    "lines": [
+      "Red Line",
+      "Pink Line"
+    ]
+  },
+  {
+    "name": "Punjabi Bagh West",
+    "id": "punjabi-bagh-west",
+    "lines": [
+      "Green Line",
+      "Pink Line"
+    ]
+  },
+  {
+    "name": "Rajiv Chowk",
+    "id": "rajiv-chowk",
+    "lines": [
+      "Yellow Line",
+      "Blue Line"
+    ]
+  },
+  {
+    "name": "Rajouri Garden",
+    "id": "rajouri-garden",
+    "lines": [
+      "Blue Line",
+      "Pink Line"
+    ]
+  },
+  {
+    "name": "Sikanderpur",
+    "id": "sikanderpur",
+    "lines": [
+      "Yellow Line",
+      "Rapid Metro Gurgaon"
+    ]
+  },
+  {
+    "name": "Welcome",
+    "id": "welcome",
+    "lines": [
+      "Red Line",
+      "Pink Line"
+    ]
+  },
+  {
+    "name": "Yamuna Bank",
+    "id": "yamuna-bank",
+    "lines": [
+      "Blue Line",
+      "Blue Line Branch"
+    ]
+  }
+]

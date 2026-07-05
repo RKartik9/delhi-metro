@@ -1,0 +1,17 @@
+{
+  "coordinateSystem": "WGS84",
+  "defaultCenter": [
+    77.209,
+    28.6139
+  ],
+  "defaultZoom": 120,
+  "scale": 15000,
+  "version": "1.0",
+  "attribution": "Data (c) OpenStreetMap contributors, ODbL",
+  "generatedAt": "2026-07-05T05:13:42.359Z",
+  "counts": {
+    "lines": 13,
+    "stations": 272,
+    "interchanges": 25
+  }
+}

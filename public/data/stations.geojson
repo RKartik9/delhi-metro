@@ -1,0 +1,5199 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "a-i-i-m-s",
+        "name": "A.I.I.M.S.",
+        "lines": [
+          "Yellow Line"
+        ],
+        "layout": "Underground",
+        "interchange": false
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.207832,
+          28.566854
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "adarsh-nagar",
+        "name": "Adarsh Nagar",
+        "lines": [
+          "Yellow Line"
+        ],
+        "layout": "At Grade",
+        "interchange": false
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.170447,
+          28.716598
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "akshardham",
+        "name": "Akshardham",
+        "lines": [
+          "Blue Line"
+        ],
+        "layout": "Elevated",
+        "interchange": false
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.279565,
+          28.617892
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "alpha-1",
+        "name": "Alpha 1",
+        "lines": [
+          "Aqua Line"
+        ],
+        "layout": "Elevated",
+        "interchange": false
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.512708,
+          28.47105
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "anand-vihar",
+        "name": "Anand Vihar",
+        "lines": [
+          "Blue Line Branch",
+          "Pink Line"
+        ],
+        "layout": "Elevated",
+        "interchange": true
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.31573,
+          28.646803
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "arjan-garh",
+        "name": "Arjan Garh",
+        "lines": [
+          "Yellow Line"
+        ],
+        "layout": "Elevated",
+        "interchange": false
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.125784,
+          28.480716
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "arthala",
+        "name": "Arthala",
+        "lines": [
+          "Red Line"
+        ],
+        "layout": "Elevated",
+        "interchange": false
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.391894,
+          28.677027
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "ashok-park-main",
+        "name": "Ashok Park Main",
+        "lines": [
+          "Green Line",
+          "Green Line Branch"
+        ],
+        "layout": "Elevated",
+        "interchange": true
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.155281,
+          28.671537
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "ashram",
+        "name": "Ashram",
+        "lines": [
+          "Pink Line"
+        ],
+        "layout": "Underground",
+        "interchange": false
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.258122,
+          28.572003
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "azadpur",
+        "name": "Azadpur",
+        "lines": [
+          "Yellow Line",
+          "Pink Line"
+        ],
+        "layout": "Underground",
+        "interchange": true
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.181164,
+          28.706443
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "badarpur",
+        "name": "Badarpur",
+        "lines": [
+          "Violet Line"
+        ],
+        "layout": "Elevated",
+        "interchange": false
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.303024,
+          28.49317
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "badhkal-mor",
+        "name": "Badhkal Mor",
+        "lines": [
+          "Violet Line"
+        ],
+        "layout": "Elevated",
+        "interchange": false
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.310377,
+          28.422714
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "bahadurgarh-city",
+        "name": "Bahadurgarh City",
+        "lines": [
+          "Green Line"
+        ],
+        "layout": "Elevated",
+        "interchange": false
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          76.93544,
+          28.690658
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "barakhambha-road",
+        "name": "Barakhambha Road",
+        "lines": [
+          "Blue Line"
+        ],
+        "layout": "Underground",
+        "interchange": false
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.225021,
+          28.629787
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "bata-chowk",
+        "name": "Bata Chowk",
+        "lines": [
+          "Violet Line"
+        ],
+        "layout": "Elevated",
+        "interchange": false
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.313462,
+          28.385836
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "belvedere-towers",
+        "name": "Belvedere Towers",
+        "lines": [
+          "Rapid Metro Gurgaon"
+        ],
+        "layout": "Elevated",
+        "interchange": false
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.088132,
+          28.491702
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "bhajanpura",
+        "name": "Bhajanpura",
+        "lines": [
+          "Pink Line"
+        ],
+        "layout": "Elevated",
+        "interchange": false
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.262644,
+          28.70362
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "bhikaji-cama-place",
+        "name": "Bhikaji Cama Place",
+        "lines": [
+          "Pink Line"
+        ],
+        "layout": "Underground",
+        "interchange": false
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.18786,
+          28.570239
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "botanical-garden",
+        "name": "Botanical Garden",
+        "lines": [
+          "Blue Line",
+          "Magenta Line"
+        ],
+        "layout": "Elevated",
+        "interchange": true
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.334136,
+          28.563937
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "brigadier-hoshiyar-singh",
+        "name": "Brigadier Hoshiyar Singh",
+        "lines": [
+          "Green Line"
+        ],
+        "layout": "Elevated",
+        "interchange": false
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          76.919144,
+          28.697343
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "burari",
+        "name": "Burari",
+        "lines": [
+          "Pink Line"
+        ],
+        "layout": "Elevated",
+        "interchange": false
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.199837,
+          28.729798
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "central-secretariat",
+        "name": "Central Secretariat",
+        "lines": [
+          "Yellow Line",
+          "Violet Line"
+        ],
+        "layout": "Underground",
+        "interchange": true
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.212351,
+          28.615875
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "chandni-chowk",
+        "name": "Chandni Chowk",
+        "lines": [
+          "Yellow Line"
+        ],
+        "layout": "Underground",
+        "interchange": false
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.230366,
+          28.658421
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "chawri-bazaar",
+        "name": "Chawri Bazaar",
+        "lines": [
+          "Yellow Line"
+        ],
+        "layout": "Underground",
+        "interchange": false
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.226544,
+          28.649251
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "chhatarpur",
+        "name": "Chhatarpur",
+        "lines": [
+          "Yellow Line"
+        ],
+        "layout": "Elevated",
+        "interchange": false
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.174936,
+          28.506755
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "chirag-delhi",
+        "name": "Chirag Delhi",
+        "lines": [
+          "Magenta Line"
+        ],
+        "layout": "Underground",
+        "interchange": false
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.230291,
+          28.541091
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "civil-lines",
+        "name": "Civil Lines",
+        "lines": [
+          "Yellow Line"
+        ],
+        "layout": "Underground",
+        "interchange": false
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.225057,
+          28.676857
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "cyber-city",
+        "name": "Cyber City",
+        "lines": [
+          "Rapid Metro Gurgaon"
+        ],
+        "layout": "Elevated",
+        "interchange": false
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.08916,
+          28.498061
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "dabri-mor-janakpuri-south",
+        "name": "Dabri Mor - Janakpuri South",
+        "lines": [
+          "Magenta Line"
+        ],
+        "layout": "Underground",
+        "interchange": false
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.085178,
+          28.615756
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "dashrath-puri",
+        "name": "Dashrath Puri",
+        "lines": [
+          "Magenta Line"
+        ],
+        "layout": "Underground",
+        "interchange": false
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.082356,
+          28.601875
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "delhi-aerocity",
+        "name": "Delhi Aerocity",
+        "lines": [
+          "Airport Express"
+        ],
+        "layout": "Underground",
+        "interchange": false
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.120804,
+          28.54876
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "delhi-cantt",
+        "name": "Delhi Cantt",
+        "lines": [
+          "Pink Line"
+        ],
+        "layout": "Elevated",
+        "interchange": false
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.140378,
+          28.6086
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "delhi-gate",
+        "name": "Delhi Gate",
+        "lines": [
+          "Violet Line"
+        ],
+        "layout": "Underground",
+        "interchange": false
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.24081,
+          28.639221
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "delta-1",
+        "name": "Delta 1",
+        "lines": [
+          "Aqua Line"
+        ],
+        "layout": "Elevated",
+        "interchange": false
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.525693,
+          28.478491
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "depot-station",
+        "name": "Depot Station",
+        "lines": [
+          "Aqua Line"
+        ],
+        "layout": "Elevated",
+        "interchange": false
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.54398,
+          28.48903
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "dhansa-bus-stand",
+        "name": "Dhansa Bus Stand",
+        "lines": [
+          "Grey Line"
+        ],
+        "layout": "Underground",
+        "interchange": false
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          76.97855,
+          28.611883
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "dhaula-kuan",
+        "name": "Dhaula Kuan",
+        "lines": [
+          "Airport Express"
+        ],
+        "layout": "Elevated",
+        "interchange": false
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.161702,
+          28.591879
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "dilli-haat-ina",
+        "name": "Dilli Haat - INA",
+        "lines": [
+          "Yellow Line",
+          "Pink Line"
+        ],
+        "layout": "Underground",
+        "interchange": true
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.208455,
+          28.573893
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "dilshad-garden",
+        "name": "Dilshad Garden",
+        "lines": [
+          "Red Line"
+        ],
+        "layout": "Elevated",
+        "interchange": false
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.321514,
+          28.675885
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "dlf-phase-1",
+        "name": "DLF Phase 1",
+        "lines": [
+          "Rapid Metro Gurgaon"
+        ],
+        "layout": "Elevated",
+        "interchange": false
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.093937,
+          28.471426
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "dlf-phase-2",
+        "name": "DLF Phase 2",
+        "lines": [
+          "Rapid Metro Gurgaon"
+        ],
+        "layout": "Elevated",
+        "interchange": false
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.092972,
+          28.487541
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "durgabai-deshmukh-south-campus",
+        "name": "Durgabai Deshmukh South Campus",
+        "lines": [
+          "Pink Line"
+        ],
+        "layout": "Elevated",
+        "interchange": false
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.169438,
+          28.589282
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "dwarka-kakrola",
+        "name": "Dwarka - Kakrola",
+        "lines": [
+          "Blue Line",
+          "Grey Line"
+        ],
+        "layout": "Elevated",
+        "interchange": true
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.022553,
+          28.615428
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "dwarka-mor",
+        "name": "Dwarka Mor",
+        "lines": [
+          "Blue Line"
+        ],
+        "layout": "Elevated",
+        "interchange": false
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.033276,
+          28.619332
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "dwarka-sector-10",
+        "name": "Dwarka Sector 10",
+        "lines": [
+          "Blue Line"
+        ],
+        "layout": "Elevated",
+        "interchange": false
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.057486,
+          28.58104
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "dwarka-sector-11",
+        "name": "Dwarka Sector 11",
+        "lines": [
+          "Blue Line"
+        ],
+        "layout": "Elevated",
+        "interchange": false
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.049427,
+          28.586429
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "dwarka-sector-12",
+        "name": "Dwarka Sector 12",
+        "lines": [
+          "Blue Line"
+        ],
+        "layout": "Elevated",
+        "interchange": false
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.040718,
+          28.592219
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "dwarka-sector-13",
+        "name": "Dwarka Sector 13",
+        "lines": [
+          "Blue Line"
+        ],
+        "layout": "Elevated",
+        "interchange": false
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.033527,
+          28.596992
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "dwarka-sector-14",
+        "name": "Dwarka Sector 14",
+        "lines": [
+          "Blue Line"
+        ],
+        "layout": "Elevated",
+        "interchange": false
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.025961,
+          28.602204
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "dwarka-sector-21",
+        "name": "Dwarka Sector 21",
+        "lines": [
+          "Blue Line",
+          "Airport Express"
+        ],
+        "layout": "Underground",
+        "interchange": true
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.058556,
+          28.551913
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "dwarka-sector-8",
+        "name": "Dwarka Sector 8",
+        "lines": [
+          "Blue Line"
+        ],
+        "layout": "Elevated",
+        "interchange": false
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.067015,
+          28.565613
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "dwarka-sector-9",
+        "name": "Dwarka Sector 9",
+        "lines": [
+          "Blue Line"
+        ],
+        "layout": "Elevated",
+        "interchange": false
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.065309,
+          28.574263
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "east-azad-nagar",
+        "name": "East Azad Nagar",
+        "lines": [
+          "Pink Line"
+        ],
+        "layout": "Elevated",
+        "interchange": false
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.28486,
+          28.664686
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "east-vinod-nagar-mayur-vihar-ii",
+        "name": "East Vinod Nagar - Mayur Vihar - II",
+        "lines": [
+          "Pink Line"
+        ],
+        "layout": "Elevated",
+        "interchange": false
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.30542,
+          28.620097
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "escorts-mujesar",
+        "name": "Escorts Mujesar",
+        "lines": [
+          "Violet Line"
+        ],
+        "layout": "Elevated",
+        "interchange": false
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.31492,
+          28.370234
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "esi-basaidarapur",
+        "name": "ESI - Basaidarapur",
+        "lines": [
+          "Pink Line"
+        ],
+        "layout": "Elevated",
+        "interchange": false
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.12723,
+          28.658081
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "ghevra",
+        "name": "Ghevra",
+        "lines": [
+          "Green Line"
+        ],
+        "layout": "Elevated",
+        "interchange": false
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          76.996122,
+          28.685233
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "ghitorni",
+        "name": "Ghitorni",
+        "lines": [
+          "Yellow Line"
+        ],
+        "layout": "Elevated",
+        "interchange": false
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.149198,
+          28.493728
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "gnida-office",
+        "name": "GNIDA Office",
+        "lines": [
+          "Aqua Line"
+        ],
+        "layout": "Elevated",
+        "interchange": false
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.53648,
+          28.484701
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "gokulpuri",
+        "name": "Gokulpuri",
+        "lines": [
+          "Pink Line"
+        ],
+        "layout": "Elevated",
+        "interchange": false
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.286131,
+          28.702422
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "govind-puri",
+        "name": "Govind Puri",
+        "lines": [
+          "Violet Line"
+        ],
+        "layout": "Elevated",
+        "interchange": false
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.264266,
+          28.544377
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "greater-kailash",
+        "name": "Greater Kailash",
+        "lines": [
+          "Magenta Line"
+        ],
+        "layout": "Underground",
+        "interchange": false
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.238464,
+          28.541872
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "green-park",
+        "name": "Green Park",
+        "lines": [
+          "Yellow Line"
+        ],
+        "layout": "Underground",
+        "interchange": false
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.206821,
+          28.558002
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "gtb-nagar",
+        "name": "GTB Nagar",
+        "lines": [
+          "Yellow Line"
+        ],
+        "layout": "Underground",
+        "interchange": false
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.206423,
+          28.698156
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "guru-dronacharya",
+        "name": "Guru Dronacharya",
+        "lines": [
+          "Yellow Line"
+        ],
+        "layout": "Elevated",
+        "interchange": false
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.102272,
+          28.481998
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "haiderpur-badli-mor",
+        "name": "Haiderpur Badli Mor",
+        "lines": [
+          "Yellow Line"
+        ],
+        "layout": "Elevated",
+        "interchange": false
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.148872,
+          28.729917
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "harkesh-nagar-okhla",
+        "name": "Harkesh Nagar Okhla",
+        "lines": [
+          "Violet Line"
+        ],
+        "layout": "Elevated",
+        "interchange": false
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.275668,
+          28.543282
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "hauz-khas",
+        "name": "Hauz Khas",
+        "lines": [
+          "Yellow Line",
+          "Magenta Line"
+        ],
+        "layout": "Underground",
+        "interchange": true
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.20588,
+          28.543804
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "hindon-river",
+        "name": "Hindon River",
+        "lines": [
+          "Red Line"
+        ],
+        "layout": "Elevated",
+        "interchange": false
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.406548,
+          28.673456
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "iffco-chowk",
+        "name": "IFFCO Chowk",
+        "lines": [
+          "Yellow Line"
+        ],
+        "layout": "Elevated",
+        "interchange": false
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.072452,
+          28.472331
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "igi-airport",
+        "name": "IGI Airport",
+        "lines": [
+          "Airport Express"
+        ],
+        "layout": "Underground",
+        "interchange": false
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.08671,
+          28.556424
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "iit-delhi",
+        "name": "IIT Delhi",
+        "lines": [
+          "Magenta Line"
+        ],
+        "layout": "Underground",
+        "interchange": false
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.194515,
+          28.547003
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "inderlok",
+        "name": "Inderlok",
+        "lines": [
+          "Red Line",
+          "Green Line"
+        ],
+        "layout": "Elevated",
+        "interchange": true
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.169742,
+          28.673111
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "indraprastha",
+        "name": "Indraprastha",
+        "lines": [
+          "Blue Line"
+        ],
+        "layout": "Elevated",
+        "interchange": false
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.249556,
+          28.620623
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "ip-extension",
+        "name": "IP Extension",
+        "lines": [
+          "Pink Line"
+        ],
+        "layout": "Elevated",
+        "interchange": false
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.31076,
+          28.631898
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "ito",
+        "name": "ITO",
+        "lines": [
+          "Violet Line"
+        ],
+        "layout": "Underground",
+        "interchange": false
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.241073,
+          28.628191
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "jaffrabad",
+        "name": "Jaffrabad",
+        "lines": [
+          "Pink Line"
+        ],
+        "layout": "Elevated",
+        "interchange": false
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.274872,
+          28.682711
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "jagatpur-wazirabad",
+        "name": "Jagatpur - Wazirabad",
+        "lines": [
+          "Pink Line"
+        ],
+        "layout": "Elevated",
+        "interchange": false
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.223944,
+          28.721169
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "jahangirpuri",
+        "name": "Jahangirpuri",
+        "lines": [
+          "Yellow Line"
+        ],
+        "layout": "Elevated",
+        "interchange": false
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.162683,
+          28.725987
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "jama-masjid",
+        "name": "Jama Masjid",
+        "lines": [
+          "Violet Line"
+        ],
+        "layout": "Underground",
+        "interchange": false
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.237686,
+          28.650045
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "jamia-millia-islamia",
+        "name": "Jamia Millia Islamia",
+        "lines": [
+          "Magenta Line"
+        ],
+        "layout": "Elevated",
+        "interchange": false
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.286359,
+          28.563034
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "janakpuri-east",
+        "name": "Janakpuri East",
+        "lines": [
+          "Blue Line"
+        ],
+        "layout": "Elevated",
+        "interchange": false
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.086709,
+          28.633027
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "janakpuri-west",
+        "name": "Janakpuri West",
+        "lines": [
+          "Blue Line",
+          "Magenta Line"
+        ],
+        "layout": "Underground",
+        "interchange": true
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.077999,
+          28.629277
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "jangpura",
+        "name": "Jangpura",
+        "lines": [
+          "Violet Line"
+        ],
+        "layout": "Underground",
+        "interchange": false
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.239346,
+          28.583041
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "janpath",
+        "name": "Janpath",
+        "lines": [
+          "Violet Line"
+        ],
+        "layout": "Underground",
+        "interchange": false
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.219288,
+          28.624047
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "jasola-apollo",
+        "name": "Jasola Apollo",
+        "lines": [
+          "Violet Line"
+        ],
+        "layout": "Elevated",
+        "interchange": false
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.283038,
+          28.538425
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "jasola-vihar-shaheen-bagh",
+        "name": "Jasola Vihar Shaheen Bagh",
+        "lines": [
+          "Magenta Line"
+        ],
+        "layout": "Elevated",
+        "interchange": false
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.296635,
+          28.545819
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "jawaharlal-nehru-stadium",
+        "name": "Jawaharlal Nehru Stadium",
+        "lines": [
+          "Violet Line"
+        ],
+        "layout": "Underground",
+        "interchange": false
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.233808,
+          28.588249
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "jhandewalan",
+        "name": "Jhandewalan",
+        "lines": [
+          "Blue Line"
+        ],
+        "layout": "Elevated",
+        "interchange": false
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.199927,
+          28.644336
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "jharoda-majra",
+        "name": "Jharoda Majra",
+        "lines": [
+          "Pink Line"
+        ],
+        "layout": "Elevated",
+        "interchange": false
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.213683,
+          28.724905
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "jhilmil",
+        "name": "Jhilmil",
+        "lines": [
+          "Red Line"
+        ],
+        "layout": "Elevated",
+        "interchange": false
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.312394,
+          28.675751
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "johri-enclave",
+        "name": "Johri Enclave",
+        "lines": [
+          "Pink Line"
+        ],
+        "layout": "Elevated",
+        "interchange": false
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.290156,
+          28.712887
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "jor-bagh",
+        "name": "Jor Bagh",
+        "lines": [
+          "Yellow Line"
+        ],
+        "layout": "Underground",
+        "interchange": false
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.212564,
+          28.586594
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "kailash-colony",
+        "name": "Kailash Colony",
+        "lines": [
+          "Violet Line"
+        ],
+        "layout": "Elevated",
+        "interchange": false
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.241984,
+          28.555344
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "kalindi-kunj",
+        "name": "Kalindi Kunj",
+        "lines": [
+          "Magenta Line"
+        ],
+        "layout": "Elevated",
+        "interchange": false
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.310131,
+          28.542898
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "kalkaji-mandir",
+        "name": "Kalkaji Mandir",
+        "lines": [
+          "Violet Line",
+          "Magenta Line"
+        ],
+        "layout": "Underground",
+        "interchange": true
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.257896,
+          28.549787
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "kanhaiya-nagar",
+        "name": "Kanhaiya Nagar",
+        "lines": [
+          "Red Line"
+        ],
+        "layout": "Elevated",
+        "interchange": false
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.164775,
+          28.682408
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "karkarduma",
+        "name": "Karkarduma",
+        "lines": [
+          "Blue Line Branch",
+          "Pink Line"
+        ],
+        "layout": "Elevated",
+        "interchange": true
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.305833,
+          28.648872
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "karkarduma-court",
+        "name": "Karkarduma Court",
+        "lines": [
+          "Pink Line"
+        ],
+        "layout": "Elevated",
+        "interchange": false
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.295788,
+          28.653646
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "karol-bagh",
+        "name": "Karol Bagh",
+        "lines": [
+          "Blue Line"
+        ],
+        "layout": "Elevated",
+        "interchange": false
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.18852,
+          28.644031
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "kashmere-gate",
+        "name": "Kashmere Gate",
+        "lines": [
+          "Red Line",
+          "Yellow Line",
+          "Violet Line"
+        ],
+        "layout": "Underground",
+        "interchange": true
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.22818,
+          28.667897
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "kaushambi",
+        "name": "Kaushambi",
+        "lines": [
+          "Blue Line Branch"
+        ],
+        "layout": "Elevated",
+        "interchange": false
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.324339,
+          28.645408
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "keshav-puram",
+        "name": "Keshav Puram",
+        "lines": [
+          "Red Line"
+        ],
+        "layout": "Elevated",
+        "interchange": false
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.161683,
+          28.688926
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "khajuri-khas",
+        "name": "Khajuri Khas",
+        "lines": [
+          "Pink Line"
+        ],
+        "layout": "Elevated",
+        "interchange": false
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.254483,
+          28.70522
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "khan-market",
+        "name": "Khan Market",
+        "lines": [
+          "Violet Line"
+        ],
+        "layout": "Underground",
+        "interchange": false
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.229142,
+          28.602264
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "kirti-nagar",
+        "name": "Kirti Nagar",
+        "lines": [
+          "Blue Line",
+          "Green Line Branch"
+        ],
+        "layout": "Elevated",
+        "interchange": true
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.151007,
+          28.655159
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "knowledge-park-ii",
+        "name": "Knowledge Park II",
+        "lines": [
+          "Aqua Line"
+        ],
+        "layout": "Elevated",
+        "interchange": false
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.500298,
+          28.457073
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "kohat-enclave",
+        "name": "Kohat Enclave",
+        "lines": [
+          "Red Line"
+        ],
+        "layout": "Elevated",
+        "interchange": false
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.140539,
+          28.698042
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "krishna-nagar",
+        "name": "Krishna Nagar",
+        "lines": [
+          "Pink Line"
+        ],
+        "layout": "Elevated",
+        "interchange": false
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.290163,
+          28.657795
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "krishna-park-extension",
+        "name": "Krishna Park Extension",
+        "lines": [
+          "Magenta Line"
+        ],
+        "layout": "Underground",
+        "interchange": false
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.08431,
+          28.647802
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "lajpat-nagar",
+        "name": "Lajpat Nagar",
+        "lines": [
+          "Violet Line",
+          "Pink Line"
+        ],
+        "layout": "Underground",
+        "interchange": true
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.237342,
+          28.570055
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "lal-quila",
+        "name": "Lal Quila",
+        "lines": [
+          "Violet Line"
+        ],
+        "layout": "Underground",
+        "interchange": false
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.236728,
+          28.65748
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "laxmi-nagar",
+        "name": "Laxmi Nagar",
+        "lines": [
+          "Blue Line Branch"
+        ],
+        "layout": "Elevated",
+        "interchange": false
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.277502,
+          28.630622
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "lok-kalyan-marg",
+        "name": "Lok Kalyan Marg",
+        "lines": [
+          "Yellow Line"
+        ],
+        "layout": "Underground",
+        "interchange": false
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.211127,
+          28.597355
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "m-g-road",
+        "name": "M G Road",
+        "lines": [
+          "Yellow Line"
+        ],
+        "layout": "Elevated",
+        "interchange": false
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.079899,
+          28.479524
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "madhuban-chowk",
+        "name": "Madhuban Chowk",
+        "lines": [
+          "Red Line"
+        ],
+        "layout": "Elevated",
+        "interchange": false
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.13225,
+          28.703268
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "madipur",
+        "name": "Madipur",
+        "lines": [
+          "Green Line"
+        ],
+        "layout": "Elevated",
+        "interchange": false
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.119345,
+          28.676405
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "majlis-park",
+        "name": "Majlis Park",
+        "lines": [
+          "Pink Line"
+        ],
+        "layout": "Elevated",
+        "interchange": false
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.181817,
+          28.724605
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "malviya-nagar",
+        "name": "Malviya Nagar",
+        "lines": [
+          "Yellow Line"
+        ],
+        "layout": "Underground",
+        "interchange": false
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.204855,
+          28.529067
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "mandawali-west-vinod-nagar",
+        "name": "Mandawali - West Vinod Nagar",
+        "lines": [
+          "Pink Line"
+        ],
+        "layout": "Elevated",
+        "interchange": false
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.304479,
+          28.624961
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "mandi-house",
+        "name": "Mandi House",
+        "lines": [
+          "Blue Line",
+          "Violet Line"
+        ],
+        "layout": "Underground",
+        "interchange": true
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.234195,
+          28.625563
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "mansarovar-park",
+        "name": "Mansarovar Park",
+        "lines": [
+          "Red Line"
+        ],
+        "layout": "Elevated",
+        "interchange": false
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.300869,
+          28.675415
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "maujpur-babarpur",
+        "name": "Maujpur - Babarpur",
+        "lines": [
+          "Pink Line"
+        ],
+        "layout": "Elevated",
+        "interchange": false
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.279687,
+          28.692093
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "mayapuri",
+        "name": "Mayapuri",
+        "lines": [
+          "Pink Line"
+        ],
+        "layout": "Elevated",
+        "interchange": false
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.129701,
+          28.637166
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "mayur-vihar-i",
+        "name": "Mayur Vihar - I",
+        "lines": [
+          "Blue Line",
+          "Pink Line"
+        ],
+        "layout": "Elevated",
+        "interchange": true
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.290149,
+          28.603791
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "mayur-vihar-extension",
+        "name": "Mayur Vihar Extension",
+        "lines": [
+          "Blue Line"
+        ],
+        "layout": "Elevated",
+        "interchange": false
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.294549,
+          28.594508
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "mewala-maharajpur",
+        "name": "Mewala Maharajpur",
+        "lines": [
+          "Violet Line"
+        ],
+        "layout": "Elevated",
+        "interchange": false
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.308095,
+          28.44862
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "millennium-city-centre-gurugram",
+        "name": "Millennium City Centre Gurugram",
+        "lines": [
+          "Yellow Line"
+        ],
+        "layout": "Elevated",
+        "interchange": false
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.072686,
+          28.459331
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "model-town",
+        "name": "Model Town",
+        "lines": [
+          "Yellow Line"
+        ],
+        "layout": "Elevated",
+        "interchange": false
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.194006,
+          28.702739
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "mohan-estate",
+        "name": "Mohan Estate",
+        "lines": [
+          "Violet Line"
+        ],
+        "layout": "Elevated",
+        "interchange": false
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.29448,
+          28.519725
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "mohan-nagar",
+        "name": "Mohan Nagar",
+        "lines": [
+          "Red Line"
+        ],
+        "layout": "Elevated",
+        "interchange": false
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.383902,
+          28.678563
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "moolchand",
+        "name": "Moolchand",
+        "lines": [
+          "Violet Line"
+        ],
+        "layout": "Elevated",
+        "interchange": false
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.234278,
+          28.564404
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "moti-nagar",
+        "name": "Moti Nagar",
+        "lines": [
+          "Blue Line"
+        ],
+        "layout": "Elevated",
+        "interchange": false
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.142419,
+          28.657878
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "moulsari-avenue-station",
+        "name": "Moulsari Avenue Station",
+        "lines": [
+          "Rapid Metro Gurgaon"
+        ],
+        "layout": "Elevated",
+        "interchange": false
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.094631,
+          28.500778
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "mundka",
+        "name": "Mundka",
+        "lines": [
+          "Green Line"
+        ],
+        "layout": "Elevated",
+        "interchange": false
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.030571,
+          28.682351
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "mundka-industrial-area",
+        "name": "Mundka Industrial Area",
+        "lines": [
+          "Green Line"
+        ],
+        "layout": "Elevated",
+        "interchange": false
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.017114,
+          28.683353
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "munirka",
+        "name": "Munirka",
+        "lines": [
+          "Magenta Line"
+        ],
+        "layout": "Underground",
+        "interchange": false
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.175041,
+          28.556881
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "n-h-p-c-chowk",
+        "name": "N.H.P.C. Chowk",
+        "lines": [
+          "Violet Line"
+        ],
+        "layout": "Elevated",
+        "interchange": false
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.307393,
+          28.457779
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "najafgarh",
+        "name": "Najafgarh",
+        "lines": [
+          "Grey Line"
+        ],
+        "layout": "Underground",
+        "interchange": false
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          76.986563,
+          28.612426
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "nanaksar-sonia-vihar",
+        "name": "Nanaksar - Sonia Vihar",
+        "lines": [
+          "Pink Line"
+        ],
+        "layout": "Elevated",
+        "interchange": false
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.242523,
+          28.708759
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "nangli",
+        "name": "Nangli",
+        "lines": [
+          "Grey Line"
+        ],
+        "layout": "Elevated",
+        "interchange": false
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.010452,
+          28.617278
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "nangloi",
+        "name": "Nangloi",
+        "lines": [
+          "Green Line"
+        ],
+        "layout": "Elevated",
+        "interchange": false
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.064726,
+          28.682334
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "nangloi-railway-station",
+        "name": "Nangloi Railway Station",
+        "lines": [
+          "Green Line"
+        ],
+        "layout": "Elevated",
+        "interchange": false
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.056237,
+          28.68213
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "naraina-vihar",
+        "name": "Naraina Vihar",
+        "lines": [
+          "Pink Line"
+        ],
+        "layout": "Underground",
+        "interchange": false
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.136413,
+          28.624373
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "nawada",
+        "name": "Nawada",
+        "lines": [
+          "Blue Line"
+        ],
+        "layout": "Elevated",
+        "interchange": false
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.045078,
+          28.620297
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "neelam-chowk-ajronda",
+        "name": "Neelam Chowk Ajronda",
+        "lines": [
+          "Violet Line"
+        ],
+        "layout": "Elevated",
+        "interchange": false
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.312435,
+          28.397488
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "nehru-enclave",
+        "name": "Nehru Enclave",
+        "lines": [
+          "Magenta Line"
+        ],
+        "layout": "Underground",
+        "interchange": false
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.251518,
+          28.546037
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "nehru-place",
+        "name": "Nehru Place",
+        "lines": [
+          "Violet Line"
+        ],
+        "layout": "Elevated",
+        "interchange": false
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.251739,
+          28.551441
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "netaji-subhash-place",
+        "name": "Netaji Subhash Place",
+        "lines": [
+          "Red Line",
+          "Pink Line"
+        ],
+        "layout": "Underground",
+        "interchange": true
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.153351,
+          28.695399
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "new-ashok-nagar",
+        "name": "New Ashok Nagar",
+        "lines": [
+          "Blue Line"
+        ],
+        "layout": "Elevated",
+        "interchange": false
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.301599,
+          28.589158
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "new-delhi",
+        "name": "New Delhi",
+        "lines": [
+          "Yellow Line"
+        ],
+        "layout": "Underground",
+        "interchange": false
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.222771,
+          28.643471
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "new-delhi-airport-express-terminal",
+        "name": "New Delhi Airport Express Terminal",
+        "lines": [
+          "Airport Express"
+        ],
+        "layout": "Underground",
+        "interchange": false
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.223133,
+          28.642471
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "nirman-vihar",
+        "name": "Nirman Vihar",
+        "lines": [
+          "Blue Line Branch"
+        ],
+        "layout": "Elevated",
+        "interchange": false
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.286752,
+          28.636558
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "noida-city-centre",
+        "name": "Noida City Centre",
+        "lines": [
+          "Blue Line"
+        ],
+        "layout": "Elevated",
+        "interchange": false
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.356209,
+          28.574837
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "noida-electronic-city",
+        "name": "Noida Electronic City",
+        "lines": [
+          "Blue Line"
+        ],
+        "layout": "Elevated",
+        "interchange": false
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.375044,
+          28.628262
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "noida-golf-course",
+        "name": "Noida Golf Course",
+        "lines": [
+          "Blue Line"
+        ],
+        "layout": "Elevated",
+        "interchange": false
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.346376,
+          28.567474
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "noida-sector-101",
+        "name": "Noida Sector 101",
+        "lines": [
+          "Aqua Line"
+        ],
+        "layout": "Elevated",
+        "interchange": false
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.38497,
+          28.556068
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "noida-sector-137",
+        "name": "Noida Sector 137",
+        "lines": [
+          "Aqua Line"
+        ],
+        "layout": "Elevated",
+        "interchange": false
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.403629,
+          28.510788
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "noida-sector-142",
+        "name": "Noida Sector 142",
+        "lines": [
+          "Aqua Line"
+        ],
+        "layout": "Elevated",
+        "interchange": false
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.412868,
+          28.499014
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "noida-sector-143",
+        "name": "Noida Sector 143",
+        "lines": [
+          "Aqua Line"
+        ],
+        "layout": "Elevated",
+        "interchange": false
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.422392,
+          28.494281
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "noida-sector-144",
+        "name": "Noida Sector 144",
+        "lines": [
+          "Aqua Line"
+        ],
+        "layout": "Elevated",
+        "interchange": false
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.433088,
+          28.486313
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "noida-sector-145",
+        "name": "Noida Sector 145",
+        "lines": [
+          "Aqua Line"
+        ],
+        "layout": "Elevated",
+        "interchange": false
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.442423,
+          28.479022
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "noida-sector-146",
+        "name": "Noida Sector 146",
+        "lines": [
+          "Aqua Line"
+        ],
+        "layout": "Elevated",
+        "interchange": false
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.455189,
+          28.468875
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "noida-sector-147",
+        "name": "Noida Sector 147",
+        "lines": [
+          "Aqua Line"
+        ],
+        "layout": "Elevated",
+        "interchange": false
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.466208,
+          28.459342
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "noida-sector-148",
+        "name": "Noida Sector 148",
+        "lines": [
+          "Aqua Line"
+        ],
+        "layout": "Elevated",
+        "interchange": false
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.476623,
+          28.448079
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "noida-sector-15",
+        "name": "Noida Sector 15",
+        "lines": [
+          "Blue Line"
+        ],
+        "layout": "Elevated",
+        "interchange": false
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.311735,
+          28.58496
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "noida-sector-16",
+        "name": "Noida Sector 16",
+        "lines": [
+          "Blue Line"
+        ],
+        "layout": "Elevated",
+        "interchange": false
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.317876,
+          28.578148
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "noida-sector-18",
+        "name": "Noida Sector 18",
+        "lines": [
+          "Blue Line"
+        ],
+        "layout": "Elevated",
+        "interchange": false
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.326174,
+          28.570824
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "noida-sector-34",
+        "name": "Noida Sector 34",
+        "lines": [
+          "Blue Line"
+        ],
+        "layout": "Elevated",
+        "interchange": false
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.36348,
+          28.580276
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "noida-sector-51",
+        "name": "Noida Sector 51",
+        "lines": [
+          "Aqua Line"
+        ],
+        "layout": "Elevated",
+        "interchange": false
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.375279,
+          28.585725
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "noida-sector-52",
+        "name": "Noida Sector 52",
+        "lines": [
+          "Blue Line"
+        ],
+        "layout": "Elevated",
+        "interchange": false
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.372775,
+          28.586782
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "noida-sector-59",
+        "name": "Noida Sector 59",
+        "lines": [
+          "Blue Line"
+        ],
+        "layout": "Elevated",
+        "interchange": false
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.372642,
+          28.606529
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "noida-sector-61",
+        "name": "Noida Sector 61",
+        "lines": [
+          "Blue Line"
+        ],
+        "layout": "Elevated",
+        "interchange": false
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.37223,
+          28.597586
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "noida-sector-62",
+        "name": "Noida Sector 62",
+        "lines": [
+          "Blue Line"
+        ],
+        "layout": "Elevated",
+        "interchange": false
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.373555,
+          28.616988
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "noida-sector-76",
+        "name": "Noida Sector 76",
+        "lines": [
+          "Aqua Line"
+        ],
+        "layout": "Elevated",
+        "interchange": false
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.379686,
+          28.56534
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "noida-sector-81",
+        "name": "Noida Sector 81",
+        "lines": [
+          "Aqua Line"
+        ],
+        "layout": "Elevated",
+        "interchange": false
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.389964,
+          28.54931
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "noida-sector-83",
+        "name": "Noida Sector 83",
+        "lines": [
+          "Aqua Line"
+        ],
+        "layout": "Elevated",
+        "interchange": false
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.396459,
+          28.522295
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "nsez",
+        "name": "NSEZ",
+        "lines": [
+          "Aqua Line"
+        ],
+        "layout": "Elevated",
+        "interchange": false
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.394783,
+          28.532416
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "okhla-bird-sanctuary",
+        "name": "Okhla Bird Sanctuary",
+        "lines": [
+          "Magenta Line"
+        ],
+        "layout": "Elevated",
+        "interchange": false
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.321614,
+          28.552924
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "okhla-nsic",
+        "name": "Okhla NSIC",
+        "lines": [
+          "Magenta Line"
+        ],
+        "layout": "Elevated",
+        "interchange": false
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.264837,
+          28.554448
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "okhla-vihar",
+        "name": "Okhla Vihar",
+        "lines": [
+          "Magenta Line"
+        ],
+        "layout": "Elevated",
+        "interchange": false
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.291848,
+          28.561302
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "old-faridabad",
+        "name": "Old Faridabad",
+        "lines": [
+          "Violet Line"
+        ],
+        "layout": "Elevated",
+        "interchange": false
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.311462,
+          28.410836
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "palam",
+        "name": "Palam",
+        "lines": [
+          "Magenta Line"
+        ],
+        "layout": "Underground",
+        "interchange": false
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.083049,
+          28.58891
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "panchsheel-park",
+        "name": "Panchsheel Park",
+        "lines": [
+          "Magenta Line"
+        ],
+        "layout": "Underground",
+        "interchange": false
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.221092,
+          28.542353
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "pandit-shree-ram-sharma",
+        "name": "Pandit Shree Ram Sharma",
+        "lines": [
+          "Green Line"
+        ],
+        "layout": "Elevated",
+        "interchange": false
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          76.951161,
+          28.689211
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "pari-chowk",
+        "name": "Pari Chowk",
+        "lines": [
+          "Aqua Line"
+        ],
+        "layout": "Elevated",
+        "interchange": false
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.508335,
+          28.463414
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "paschim-vihar-east",
+        "name": "Paschim Vihar East",
+        "lines": [
+          "Green Line"
+        ],
+        "layout": "Elevated",
+        "interchange": false
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.112278,
+          28.677329
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "paschim-vihar-west",
+        "name": "Paschim Vihar West",
+        "lines": [
+          "Green Line"
+        ],
+        "layout": "Elevated",
+        "interchange": false
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.102211,
+          28.678585
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "patel-chowk",
+        "name": "Patel Chowk",
+        "lines": [
+          "Yellow Line"
+        ],
+        "layout": "Underground",
+        "interchange": false
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.214059,
+          28.622954
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "patel-nagar",
+        "name": "Patel Nagar",
+        "lines": [
+          "Blue Line"
+        ],
+        "layout": "Elevated",
+        "interchange": false
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.169292,
+          28.645029
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "peeragarhi",
+        "name": "Peeragarhi",
+        "lines": [
+          "Green Line"
+        ],
+        "layout": "Elevated",
+        "interchange": false
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.092658,
+          28.679712
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "phase-3-station",
+        "name": "Phase 3 Station",
+        "lines": [
+          "Rapid Metro Gurgaon"
+        ],
+        "layout": "Elevated",
+        "interchange": false
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.093661,
+          28.493568
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "pratap-nagar",
+        "name": "Pratap Nagar",
+        "lines": [
+          "Red Line"
+        ],
+        "layout": "Elevated",
+        "interchange": false
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.198897,
+          28.666718
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "preet-vihar",
+        "name": "Preet Vihar",
+        "lines": [
+          "Blue Line Branch"
+        ],
+        "layout": "Elevated",
+        "interchange": false
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.295259,
+          28.641441
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "pul-bangash",
+        "name": "Pul Bangash",
+        "lines": [
+          "Red Line"
+        ],
+        "layout": "Elevated",
+        "interchange": false
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.207416,
+          28.666407
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "punjabi-bagh",
+        "name": "Punjabi Bagh",
+        "lines": [
+          "Green Line"
+        ],
+        "layout": "Elevated",
+        "interchange": false
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.146115,
+          28.672927
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "punjabi-bagh-west",
+        "name": "Punjabi Bagh West",
+        "lines": [
+          "Green Line",
+          "Pink Line"
+        ],
+        "layout": "Elevated",
+        "interchange": true
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.139864,
+          28.673395
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "qutab-minar",
+        "name": "Qutab Minar",
+        "lines": [
+          "Yellow Line"
+        ],
+        "layout": "Elevated",
+        "interchange": false
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.186472,
+          28.51293
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "r-k-puram",
+        "name": "R. K. Puram",
+        "lines": [
+          "Magenta Line"
+        ],
+        "layout": "Underground",
+        "interchange": false
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.185505,
+          28.550363
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "rainbow-metro-station",
+        "name": "Rainbow Metro Station",
+        "lines": [
+          "Aqua Line"
+        ],
+        "layout": "Elevated",
+        "interchange": false
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.378258,
+          28.574361
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "raj-bagh",
+        "name": "Raj Bagh",
+        "lines": [
+          "Red Line"
+        ],
+        "layout": "Elevated",
+        "interchange": false
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.346863,
+          28.677119
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "raja-nahar-singh",
+        "name": "Raja Nahar Singh",
+        "lines": [
+          "Violet Line"
+        ],
+        "layout": "Elevated",
+        "interchange": false
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.316479,
+          28.340005
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "rajdhani-park",
+        "name": "Rajdhani Park",
+        "lines": [
+          "Green Line"
+        ],
+        "layout": "Elevated",
+        "interchange": false
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.043936,
+          28.682241
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "rajendra-nagar",
+        "name": "Rajendra Nagar",
+        "lines": [
+          "Red Line"
+        ],
+        "layout": "Elevated",
+        "interchange": false
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.358138,
+          28.677641
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "rajendra-place",
+        "name": "Rajendra Place",
+        "lines": [
+          "Blue Line"
+        ],
+        "layout": "Elevated",
+        "interchange": false
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.178271,
+          28.642517
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "rajiv-chowk",
+        "name": "Rajiv Chowk",
+        "lines": [
+          "Yellow Line",
+          "Blue Line"
+        ],
+        "layout": "Underground",
+        "interchange": true
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.219567,
+          28.63277
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "rajouri-garden",
+        "name": "Rajouri Garden",
+        "lines": [
+          "Blue Line",
+          "Pink Line"
+        ],
+        "layout": "Elevated",
+        "interchange": true
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.123473,
+          28.650125
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "ramakrishna-ashram-marg",
+        "name": "Ramakrishna Ashram Marg",
+        "lines": [
+          "Blue Line"
+        ],
+        "layout": "Elevated",
+        "interchange": false
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.208594,
+          28.639259
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "ramesh-nagar",
+        "name": "Ramesh Nagar",
+        "lines": [
+          "Blue Line"
+        ],
+        "layout": "Elevated",
+        "interchange": false
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.131644,
+          28.652765
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "rithala",
+        "name": "Rithala",
+        "lines": [
+          "Red Line"
+        ],
+        "layout": "Elevated",
+        "interchange": false
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.107161,
+          28.720788
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "rohini-east",
+        "name": "Rohini East",
+        "lines": [
+          "Red Line"
+        ],
+        "layout": "Underground",
+        "interchange": false
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.126022,
+          28.707597
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "rohini-sector-18-19",
+        "name": "Rohini Sector 18, 19",
+        "lines": [
+          "Yellow Line"
+        ],
+        "layout": "Elevated",
+        "interchange": false
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.139864,
+          28.738344
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "rohini-west",
+        "name": "Rohini West",
+        "lines": [
+          "Red Line"
+        ],
+        "layout": "Elevated",
+        "interchange": false
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.115385,
+          28.714957
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "sadar-bazar-cantonment",
+        "name": "Sadar Bazar Cantonment",
+        "lines": [
+          "Magenta Line"
+        ],
+        "layout": "Elevated",
+        "interchange": false
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.111125,
+          28.57709
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "saket",
+        "name": "Saket",
+        "lines": [
+          "Yellow Line"
+        ],
+        "layout": "Underground",
+        "interchange": false
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.201898,
+          28.520873
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "samaypur-badli",
+        "name": "Samaypur Badli",
+        "lines": [
+          "Yellow Line"
+        ],
+        "layout": "Elevated",
+        "interchange": false
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.138299,
+          28.744639
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "sant-surdas-sihi",
+        "name": "Sant Surdas (Sihi)",
+        "lines": [
+          "Violet Line"
+        ],
+        "layout": "Elevated",
+        "interchange": false
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.316226,
+          28.354651
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "sarai",
+        "name": "Sarai",
+        "lines": [
+          "Violet Line"
+        ],
+        "layout": "Elevated",
+        "interchange": false
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.304918,
+          28.47797
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "sarai-kale-khan-nizamuddin",
+        "name": "Sarai Kale Khan - Nizamuddin",
+        "lines": [
+          "Pink Line"
+        ],
+        "layout": "Underground",
+        "interchange": false
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.257386,
+          28.5883
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "sarita-vihar",
+        "name": "Sarita Vihar",
+        "lines": [
+          "Violet Line"
+        ],
+        "layout": "Elevated",
+        "interchange": false
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.288316,
+          28.528588
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "sarojini-nagar",
+        "name": "Sarojini Nagar",
+        "lines": [
+          "Pink Line"
+        ],
+        "layout": "Underground",
+        "interchange": false
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.198077,
+          28.575794
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "satguru-ramsingh-marg",
+        "name": "Satguru Ramsingh Marg",
+        "lines": [
+          "Green Line Branch"
+        ],
+        "layout": "Elevated",
+        "interchange": false
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.157553,
+          28.662079
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "sector-28",
+        "name": "Sector 28",
+        "lines": [
+          "Violet Line"
+        ],
+        "layout": "Elevated",
+        "interchange": false
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.309063,
+          28.43816
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "sector-42-43",
+        "name": "Sector 42 - 43",
+        "lines": [
+          "Rapid Metro Gurgaon"
+        ],
+        "layout": "Elevated",
+        "interchange": false
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.096929,
+          28.457423
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "sector-53-54",
+        "name": "Sector 53 - 54",
+        "lines": [
+          "Rapid Metro Gurgaon"
+        ],
+        "layout": "Elevated",
+        "interchange": false
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.100441,
+          28.446379
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "sector-54-chowk",
+        "name": "Sector 54 Chowk",
+        "lines": [
+          "Rapid Metro Gurgaon"
+        ],
+        "layout": "Elevated",
+        "interchange": false
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.10481,
+          28.432964
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "sector-55-56",
+        "name": "Sector 55 - 56",
+        "lines": [
+          "Rapid Metro Gurgaon"
+        ],
+        "layout": "Elevated",
+        "interchange": false
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.105089,
+          28.423299
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "seelampur",
+        "name": "Seelampur",
+        "lines": [
+          "Red Line"
+        ],
+        "layout": "Elevated",
+        "interchange": false
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.266763,
+          28.669917
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "seva-teerth",
+        "name": "Seva Teerth",
+        "lines": [
+          "Yellow Line"
+        ],
+        "layout": "Underground",
+        "interchange": false
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.211825,
+          28.609512
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "shadipur",
+        "name": "Shadipur",
+        "lines": [
+          "Blue Line"
+        ],
+        "layout": "Elevated",
+        "interchange": false
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.158269,
+          28.651601
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "shahdara",
+        "name": "Shahdara",
+        "lines": [
+          "Red Line"
+        ],
+        "layout": "Elevated",
+        "interchange": false
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.289882,
+          28.67346
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "shaheed-nagar",
+        "name": "Shaheed Nagar",
+        "lines": [
+          "Red Line"
+        ],
+        "layout": "Elevated",
+        "interchange": false
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.333915,
+          28.676691
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "shaheed-sthal",
+        "name": "Shaheed Sthal",
+        "lines": [
+          "Red Line"
+        ],
+        "layout": "Elevated",
+        "interchange": false
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.41539,
+          28.670706
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "shakurpur",
+        "name": "Shakurpur",
+        "lines": [
+          "Pink Line"
+        ],
+        "layout": "Elevated",
+        "interchange": false
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.149475,
+          28.68591
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "shalimar-bagh",
+        "name": "Shalimar Bagh",
+        "lines": [
+          "Pink Line"
+        ],
+        "layout": "Underground",
+        "interchange": false
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.165429,
+          28.701988
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "shankar-vihar",
+        "name": "Shankar Vihar",
+        "lines": [
+          "Magenta Line"
+        ],
+        "layout": "Elevated",
+        "interchange": false
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.140254,
+          28.560828
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "shastri-nagar",
+        "name": "Shastri Nagar",
+        "lines": [
+          "Red Line"
+        ],
+        "layout": "Elevated",
+        "interchange": false
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.181859,
+          28.670089
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "shastri-park",
+        "name": "Shastri Park",
+        "lines": [
+          "Red Line"
+        ],
+        "layout": "At Grade",
+        "interchange": false
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.250539,
+          28.668455
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "shiv-vihar",
+        "name": "Shiv Vihar",
+        "lines": [
+          "Pink Line"
+        ],
+        "layout": "Elevated",
+        "interchange": false
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.289457,
+          28.721431
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "shivaji-park",
+        "name": "Shivaji Park",
+        "lines": [
+          "Green Line"
+        ],
+        "layout": "Elevated",
+        "interchange": false
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.130457,
+          28.67496
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "shivaji-stadium",
+        "name": "Shivaji Stadium",
+        "lines": [
+          "Airport Express"
+        ],
+        "layout": "Underground",
+        "interchange": false
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.211331,
+          28.62888
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "shree-ram-mandir-mayur-vihar",
+        "name": "Shree Ram Mandir Mayur Vihar",
+        "lines": [
+          "Pink Line"
+        ],
+        "layout": "Elevated",
+        "interchange": false
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.298042,
+          28.605631
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "shyam-park",
+        "name": "Shyam Park",
+        "lines": [
+          "Red Line"
+        ],
+        "layout": "Elevated",
+        "interchange": false
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.370485,
+          28.678239
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "sikanderpur",
+        "name": "Sikanderpur",
+        "lines": [
+          "Yellow Line",
+          "Rapid Metro Gurgaon"
+        ],
+        "layout": "Elevated",
+        "interchange": true
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.093714,
+          28.481122
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "sir-m-vishweshwaraiah-moti-bagh",
+        "name": "Sir M. Vishweshwaraiah Moti Bagh",
+        "lines": [
+          "Pink Line"
+        ],
+        "layout": "Elevated",
+        "interchange": false
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.175709,
+          28.578525
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "soorghat",
+        "name": "Soorghat",
+        "lines": [
+          "Pink Line"
+        ],
+        "layout": "Elevated",
+        "interchange": false
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.227534,
+          28.710249
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "south-extension",
+        "name": "South Extension",
+        "lines": [
+          "Pink Line"
+        ],
+        "layout": "Underground",
+        "interchange": false
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.22056,
+          28.568543
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "subhash-nagar",
+        "name": "Subhash Nagar",
+        "lines": [
+          "Blue Line"
+        ],
+        "layout": "Elevated",
+        "interchange": false
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.105216,
+          28.640501
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "sukhdev-vihar",
+        "name": "Sukhdev Vihar",
+        "lines": [
+          "Magenta Line"
+        ],
+        "layout": "Elevated",
+        "interchange": false
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.274969,
+          28.559784
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "sultanpur",
+        "name": "Sultanpur",
+        "lines": [
+          "Yellow Line"
+        ],
+        "layout": "Elevated",
+        "interchange": false
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.16091,
+          28.498971
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "supreme-court",
+        "name": "Supreme Court",
+        "lines": [
+          "Blue Line"
+        ],
+        "layout": "Elevated",
+        "interchange": false
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.242546,
+          28.623488
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "surajmal-stadium",
+        "name": "Surajmal Stadium",
+        "lines": [
+          "Green Line"
+        ],
+        "layout": "Elevated",
+        "interchange": false
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.074004,
+          28.681828
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "tagore-garden",
+        "name": "Tagore Garden",
+        "lines": [
+          "Blue Line"
+        ],
+        "layout": "Elevated",
+        "interchange": false
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.112845,
+          28.643764
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "terminal-1-igi-airport",
+        "name": "Terminal 1 IGI Airport",
+        "lines": [
+          "Magenta Line"
+        ],
+        "layout": "Underground",
+        "interchange": false
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.122621,
+          28.56486
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "tikri-border",
+        "name": "Tikri Border",
+        "lines": [
+          "Green Line"
+        ],
+        "layout": "Elevated",
+        "interchange": false
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          76.964068,
+          28.687898
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "tikri-kalan",
+        "name": "Tikri Kalan",
+        "lines": [
+          "Green Line"
+        ],
+        "layout": "Elevated",
+        "interchange": false
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          76.977201,
+          28.686819
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "tilak-nagar",
+        "name": "Tilak Nagar",
+        "lines": [
+          "Blue Line"
+        ],
+        "layout": "Elevated",
+        "interchange": false
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.096462,
+          28.636564
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "tis-hazari",
+        "name": "Tis Hazari",
+        "lines": [
+          "Red Line"
+        ],
+        "layout": "At Grade",
+        "interchange": false
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.216631,
+          28.667163
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "trilokpuri-sanjay-lake",
+        "name": "Trilokpuri Sanjay Lake",
+        "lines": [
+          "Pink Line"
+        ],
+        "layout": "Elevated",
+        "interchange": false
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.30888,
+          28.613435
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "tughlakabad",
+        "name": "Tughlakabad",
+        "lines": [
+          "Violet Line"
+        ],
+        "layout": "Elevated",
+        "interchange": false
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.29924,
+          28.50236
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "udyog-nagar",
+        "name": "Udyog Nagar",
+        "lines": [
+          "Green Line"
+        ],
+        "layout": "Elevated",
+        "interchange": false
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.080842,
+          28.681039
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "uttam-nagar-east",
+        "name": "Uttam Nagar East",
+        "lines": [
+          "Blue Line"
+        ],
+        "layout": "Elevated",
+        "interchange": false
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.065278,
+          28.624868
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "uttam-nagar-west",
+        "name": "Uttam Nagar West",
+        "lines": [
+          "Blue Line"
+        ],
+        "layout": "Elevated",
+        "interchange": false
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.055708,
+          28.621777
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "vaishali",
+        "name": "Vaishali",
+        "lines": [
+          "Blue Line Branch"
+        ],
+        "layout": "Elevated",
+        "interchange": false
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.339506,
+          28.649765
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "vasant-vihar",
+        "name": "Vasant Vihar",
+        "lines": [
+          "Magenta Line"
+        ],
+        "layout": "Underground",
+        "interchange": false
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.16109,
+          28.557808
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "vidhan-sabha",
+        "name": "Vidhan Sabha",
+        "lines": [
+          "Yellow Line"
+        ],
+        "layout": "Underground",
+        "interchange": false
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.221758,
+          28.686327
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "vinobapuri",
+        "name": "Vinobapuri",
+        "lines": [
+          "Pink Line"
+        ],
+        "layout": "Underground",
+        "interchange": false
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.248735,
+          28.565794
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "vishwa-vidyalaya",
+        "name": "Vishwa Vidyalaya",
+        "lines": [
+          "Yellow Line"
+        ],
+        "layout": "Underground",
+        "interchange": false
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.214748,
+          28.695099
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "welcome",
+        "name": "Welcome",
+        "lines": [
+          "Red Line",
+          "Pink Line"
+        ],
+        "layout": "Elevated",
+        "interchange": true
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.277375,
+          28.672135
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "yamuna-bank",
+        "name": "Yamuna Bank",
+        "lines": [
+          "Blue Line",
+          "Blue Line Branch"
+        ],
+        "layout": "At Grade",
+        "interchange": true
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.267952,
+          28.623307
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "yamuna-vihar",
+        "name": "Yamuna Vihar",
+        "lines": [
+          "Pink Line"
+        ],
+        "layout": "Elevated",
+        "interchange": false
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.277308,
+          28.7024
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "yashobhoomi-dwarka-sector-25",
+        "name": "Yashobhoomi Dwarka Sector 25",
+        "lines": [
+          "Airport Express"
+        ],
+        "layout": "Underground",
+        "interchange": false
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.045291,
+          28.550807
+        ]
+      }
+    }
+  ]
+}
