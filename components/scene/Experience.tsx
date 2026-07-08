@@ -39,22 +39,32 @@ export default function Experience() {
   const atm = useMemo(() => computeAtmosphere(timeOfDay), [timeOfDay]);
 
   const sunRef = useRef<THREE.DirectionalLight>(null);
+  const fogRef = useRef<THREE.Fog>(null);
 
-  // Keep the sun (and its shadow frustum) positioned along the sun direction.
-  useFrame(() => {
+  // Keep the sun (and its shadow frustum) positioned along the sun direction,
+  // and scale the fog with camera altitude so the full network stays visible
+  // when zoomed out (fixed fog would white-out everything past 26 km).
+  useFrame(({ camera }) => {
     const sun = sunRef.current;
-    if (!sun) return;
-    sun.position.set(
-      atm.sunDir.x * SUN_DISTANCE,
-      atm.sunDir.y * SUN_DISTANCE,
-      Math.max(atm.sunDir.z, 0.05) * SUN_DISTANCE
-    );
+    if (sun) {
+      sun.position.set(
+        atm.sunDir.x * SUN_DISTANCE,
+        atm.sunDir.y * SUN_DISTANCE,
+        Math.max(atm.sunDir.z, 0.05) * SUN_DISTANCE
+      );
+    }
+    const fog = fogRef.current;
+    if (fog) {
+      const dist = camera.position.length();
+      fog.near = Math.max(4_500, dist * 1.1);
+      fog.far = Math.max(26_000, dist * 3.5);
+    }
   });
 
   return (
     <>
       <color attach="background" args={[atm.skyHorizon]} />
-      <fog attach="fog" args={[atm.fogColor, 4_500, 26_000]} />
+      <fog ref={fogRef} attach="fog" args={[atm.fogColor, 4_500, 26_000]} />
 
       <SkyDome atmosphere={atm} />
 
@@ -79,7 +89,7 @@ export default function Experience() {
       />
 
       {atm.stars > 0.25 && (
-        <Stars radius={120_000} depth={40_000} count={4000} factor={600} fade speed={0.5} />
+        <Stars radius={35_000} depth={15_000} count={4000} factor={180} fade speed={0.5} />
       )}
 
       {/* Ground: planeGeometry lies in the X/Y plane by default (normal = +Z). */}
@@ -102,8 +112,8 @@ export default function Experience() {
         enableDamping
         dampingFactor={0.08}
         target={[0, 0, 0]}
-        minDistance={10}
-        maxDistance={70_000}
+        minDistance={20}
+        maxDistance={55_000}
         autoRotate={cameraMode === "fly"}
         autoRotateSpeed={0.6}
         maxPolarAngle={cameraMode === "free" ? Math.PI - 0.05 : Math.PI / 2.05}

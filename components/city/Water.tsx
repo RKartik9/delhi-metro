@@ -97,6 +97,11 @@ export default function Water() {
         depthWrite: false,
         fog: true,
         side: THREE.DoubleSide,
+        // Depth-decal offset: keeps the water surface stably above the
+        // greenery/ground layers without relying on raw depth precision.
+        polygonOffset: true,
+        polygonOffsetFactor: -2,
+        polygonOffsetUnits: -2,
       }),
     []
   );

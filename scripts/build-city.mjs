@@ -19,8 +19,17 @@ const RAW = resolve(__dirname, "../public/data/city/raw");
 const OUT = resolve(__dirname, "../public/data/city");
 
 const CENTER = { lng: 77.209, lat: 28.6139 };
-const RADIUS_KM = 5;
+const RADIUS_KM = 12; // fetched core radius (must match fetch-city-osm.mjs)
 const TILE_SIZE = 500; // meters
+/** Building footprints smaller than this (m^2) are dropped as sub-pixel clutter. */
+const MIN_BUILDING_AREA = 35;
+/**
+ * Within this radius (m), buildings keep their exact footprint and are
+ * extruded on the client. Beyond it they are reduced to oriented boxes
+ * ([cx, cy, angle, w, d, h]) rendered as a single InstancedMesh — visually
+ * identical at those camera distances and ~100x cheaper.
+ */
+const DETAIL_RADIUS_M = 6_000;
 const D2R = Math.PI / 180;
 const M_PER_DEG = 111_320;
 const COS_LAT0 = Math.cos(CENTER.lat * D2R);
@@ -90,6 +99,16 @@ function centroid(flat) {
 
 const clamp = (v, lo, hi) => Math.max(lo, Math.min(hi, v));
 
+function ringArea(flat) {
+  let a = 0;
+  const n = flat.length / 2;
+  for (let i = 0; i < n; i++) {
+    const j = (i + 1) % n;
+    a += flat[i * 2] * flat[j * 2 + 1] - flat[j * 2] * flat[i * 2 + 1];
+  }
+  return Math.abs(a) / 2;
+}
+
 const BUILDING_DEFAULTS = {
   apartments: 24,
   residential: 15,
@@ -149,9 +168,56 @@ function greenKind(tags = {}) {
 
 // --- Build each layer --------------------------------------------------------
 
+/** Fit an oriented box to a footprint: [cx, cy, angle, w, d]. */
+function orientedBox(flat) {
+  const n = flat.length / 2;
+  // Dominant direction = longest edge of the ring.
+  let bestLen = -1;
+  let angle = 0;
+  for (let i = 0; i < n; i++) {
+    const j = (i + 1) % n;
+    const dx = flat[j * 2] - flat[i * 2];
+    const dy = flat[j * 2 + 1] - flat[i * 2 + 1];
+    const len = dx * dx + dy * dy;
+    if (len > bestLen) {
+      bestLen = len;
+      angle = Math.atan2(dy, dx);
+    }
+  }
+  const cos = Math.cos(-angle);
+  const sin = Math.sin(-angle);
+  let minU = Infinity;
+  let maxU = -Infinity;
+  let minV = Infinity;
+  let maxV = -Infinity;
+  for (let i = 0; i < n; i++) {
+    const x = flat[i * 2];
+    const y = flat[i * 2 + 1];
+    const u = x * cos - y * sin;
+    const v = x * sin + y * cos;
+    minU = Math.min(minU, u);
+    maxU = Math.max(maxU, u);
+    minV = Math.min(minV, v);
+    maxV = Math.max(maxV, v);
+  }
+  const cu = (minU + maxU) / 2;
+  const cv = (minV + maxV) / 2;
+  // Rotate the box centre back to world space.
+  const cx = cu * Math.cos(angle) - cv * Math.sin(angle);
+  const cy = cu * Math.sin(angle) + cv * Math.cos(angle);
+  return [
+    Math.round(cx),
+    Math.round(cy),
+    +angle.toFixed(3),
+    Math.max(3, Math.round(maxU - minU)),
+    Math.max(3, Math.round(maxV - minV)),
+  ];
+}
+
 function buildBuildings() {
   const raw = readRaw("buildings");
   const tiles = {};
+  const far = [];
   let count = 0;
   for (const el of raw.elements) {
     const tags = el.tags ?? {};
@@ -160,13 +226,19 @@ function buildBuildings() {
     for (const ring of ringsFromElement(el)) {
       const r = projectRing(ring, 1.5);
       if (r.length < 6) continue; // need >= 3 points
+      if (ringArea(r) < MIN_BUILDING_AREA) continue;
       const [cx, cy] = centroid(r);
-      const key = `${Math.floor(cx / TILE_SIZE)}_${Math.floor(cy / TILE_SIZE)}`;
-      (tiles[key] ??= []).push({ r, h: height });
       count++;
+      if (Math.hypot(cx, cy) <= DETAIL_RADIUS_M) {
+        const key = `${Math.floor(cx / TILE_SIZE)}_${Math.floor(cy / TILE_SIZE)}`;
+        (tiles[key] ??= []).push({ r, h: height });
+      } else {
+        const box = orientedBox(r);
+        far.push(box[0], box[1], box[2], box[3], box[4], Math.round(height));
+      }
     }
   }
-  return { tiles, count };
+  return { tiles, far, count };
 }
 
 function buildPolygons(name, kindFn) {
@@ -205,7 +277,7 @@ function main() {
   const buildings = buildBuildings();
   writeFileSync(
     resolve(OUT, "buildings.json"),
-    JSON.stringify({ tileSize: TILE_SIZE, tiles: buildings.tiles })
+    JSON.stringify({ tileSize: TILE_SIZE, tiles: buildings.tiles, far: buildings.far })
   );
 
   console.log("Building water...");

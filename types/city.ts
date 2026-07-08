@@ -25,6 +25,11 @@ export interface BuildingItem {
 export interface BuildingsData {
   tileSize: number;
   tiles: Record<string, BuildingItem[]>;
+  /**
+   * Buildings outside the detail radius as oriented boxes, flat sextuples:
+   * [cx, cy, angleRad, width, depth, height, ...].
+   */
+  far?: number[];
 }
 
 /** A polygon layer item (water / greenery). `k` = kind for greenery. */

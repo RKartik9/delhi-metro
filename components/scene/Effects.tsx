@@ -1,33 +1,21 @@
 "use client";
 
-import { EffectComposer, Bloom, Vignette, SMAA, SSAO } from "@react-three/postprocessing";
-import { BlendFunction } from "postprocessing";
+import { EffectComposer, Bloom, Vignette, SMAA } from "@react-three/postprocessing";
 import { usePrefersReducedMotion } from "@/hooks/usePrefersReducedMotion";
 
 /**
- * Screen-space post-processing for the city: SSAO adds contact shadow / depth
- * between buildings, mild bloom lifts lights and neon, SMAA cleans edges, and a
- * soft vignette focuses the frame. Renderer-side ACES tone mapping (set on the
- * Canvas) is preserved, so no ToneMapping effect here.
+ * Screen-space post-processing for the city: mild bloom lifts lights and neon,
+ * SMAA cleans edges, and a soft vignette focuses the frame. Renderer-side ACES
+ * tone mapping (set on the Canvas) is preserved, so no ToneMapping effect here.
+ *
+ * Note: no SSAO. At this scene scale (tens of kilometres) SSAO reads a very
+ * low-precision depth buffer and its per-frame noise pattern makes the whole
+ * frame shimmer during camera motion.
  */
 export default function Effects() {
   const reduced = usePrefersReducedMotion();
   return (
-    <EffectComposer multisampling={0} enableNormalPass>
-      <SSAO
-        blendFunction={BlendFunction.MULTIPLY}
-        samples={16}
-        rings={4}
-        radius={6}
-        intensity={22}
-        luminanceInfluence={0.6}
-        bias={0.03}
-        color={undefined}
-        worldDistanceThreshold={15_000}
-        worldDistanceFalloff={3_000}
-        worldProximityThreshold={60}
-        worldProximityFalloff={30}
-      />
+    <EffectComposer multisampling={0}>
       <Bloom
         intensity={reduced ? 0.35 : 0.6}
         luminanceThreshold={0.6}

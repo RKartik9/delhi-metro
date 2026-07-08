@@ -7,8 +7,10 @@ import { useFrame } from "@react-three/fiber";
 import { useMetroStore } from "@/stores/useMetroStore";
 import type { BuildingItem } from "@/types/city";
 
-/** Beyond this distance (m) from the camera, building tiles are hidden. */
+/** Base distance (m) beyond which building tiles are hidden. Scales up with
+ * camera altitude so the city stays visible in zoomed-out overviews. */
 const CULL_DIST = 19_000;
+const CULL_DIST_MAX = 50_000;
 
 const _tmp = new THREE.Color();
 
@@ -19,14 +21,18 @@ function hash(x: number, y: number): number {
 }
 
 /** Facade color: taller towers trend cooler/lighter, low blocks warmer. */
-function buildingColor(item: BuildingItem, cx: number, cy: number): THREE.Color {
-  const t = THREE.MathUtils.clamp(item.h / 90, 0, 1);
+function facadeColor(h: number, cx: number, cy: number): THREE.Color {
+  const t = THREE.MathUtils.clamp(h / 90, 0, 1);
   const low = new THREE.Color("#b9b0a2"); // warm concrete
   const high = new THREE.Color("#aebccf"); // cool glass/steel
   _tmp.copy(low).lerp(high, t);
   const jitter = (hash(cx, cy) - 0.5) * 0.12;
   _tmp.offsetHSL(0, 0, jitter);
   return _tmp.clone();
+}
+
+function buildingColor(item: BuildingItem, cx: number, cy: number): THREE.Color {
+  return facadeColor(item.h, cx, cy);
 }
 
 function centroid(r: number[]): [number, number] {
@@ -76,6 +82,53 @@ interface Tile {
   key: string;
   geometry: THREE.BufferGeometry;
   center: THREE.Vector3;
+}
+
+/**
+ * Buildings beyond the detail radius, baked as oriented boxes in one
+ * InstancedMesh (single draw call for ~100k+ buildings).
+ */
+function FarBuildings({ boxes }: { boxes: number[] }) {
+  const count = boxes.length / 6;
+
+  const geometry = useMemo(() => {
+    const g = new THREE.BoxGeometry(1, 1, 1);
+    g.translate(0, 0, 0.5); // sit on the ground, scale z = height
+    return g;
+  }, []);
+
+  useEffect(() => () => geometry.dispose(), [geometry]);
+
+  const setup = (inst: THREE.InstancedMesh | null) => {
+    if (!inst) return;
+    const dummy = new THREE.Object3D();
+    for (let i = 0; i < count; i++) {
+      const o = i * 6;
+      const cx = boxes[o];
+      const cy = boxes[o + 1];
+      dummy.position.set(cx, cy, 0);
+      dummy.rotation.set(0, 0, boxes[o + 2]);
+      dummy.scale.set(boxes[o + 3], boxes[o + 4], boxes[o + 5]);
+      dummy.updateMatrix();
+      inst.setMatrixAt(i, dummy.matrix);
+      inst.setColorAt(i, facadeColor(boxes[o + 5], cx, cy));
+    }
+    inst.instanceMatrix.needsUpdate = true;
+    if (inst.instanceColor) inst.instanceColor.needsUpdate = true;
+  };
+
+  if (count === 0) return null;
+
+  return (
+    <instancedMesh
+      key={count}
+      args={[geometry, undefined, count]}
+      ref={setup}
+      frustumCulled={false}
+    >
+      <meshStandardMaterial roughness={0.85} metalness={0.05} flatShading />
+    </instancedMesh>
+  );
 }
 
 /**
@@ -134,9 +187,13 @@ export default function Buildings() {
   // Distance cull: hide tiles well beyond the fog so we don't draw the far city.
   useFrame(({ camera }) => {
     const refs = meshRefs.current;
+    const cull = Math.min(
+      Math.max(CULL_DIST, camera.position.z * 2.2),
+      CULL_DIST_MAX
+    );
     for (let i = 0; i < tiles.length; i++) {
       const m = refs[i];
-      if (m) m.visible = camera.position.distanceTo(tiles[i].center) < CULL_DIST;
+      if (m) m.visible = camera.position.distanceTo(tiles[i].center) < cull;
     }
   });
 
@@ -156,6 +213,7 @@ export default function Buildings() {
           receiveShadow
         />
       ))}
+      <FarBuildings boxes={city.buildings.far ?? []} />
     </group>
   );
 }

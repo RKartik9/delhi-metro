@@ -30,8 +30,11 @@ export default function SceneCanvas() {
         position: [0, -4500, 3200],
         up: [0, 0, 1],
         fov: 50,
-        near: 3,
-        far: 100000,
+        // Keep the near/far ratio tight: depth precision falls off with
+        // far/near, and a loose range causes the flat city layers to z-fight
+        // (scene-wide shimmer while panning/zooming).
+        near: 10,
+        far: 60000,
       }}
       onPointerMissed={() => useMetroStore.getState().clearSelection()}
     >

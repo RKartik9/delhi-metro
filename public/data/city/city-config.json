@@ -3,15 +3,15 @@
     77.209,
     28.6139
   ],
-  "radiusKm": 5,
+  "radiusKm": 12,
   "tileSize": 500,
-  "generatedAt": "2026-07-05T07:34:41.810Z",
+  "generatedAt": "2026-07-07T18:37:13.604Z",
   "attribution": "Data (c) OpenStreetMap contributors, ODbL",
   "counts": {
-    "buildings": 26629,
-    "buildingTiles": 398,
-    "water": 143,
-    "greenery": 1117,
-    "roads": 9693
+    "buildings": 158303,
+    "buildingTiles": 421,
+    "water": 2835,
+    "greenery": 8407,
+    "roads": 74205
   }
 }

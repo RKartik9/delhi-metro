@@ -94,8 +94,8 @@ export default function Roads() {
         roughness={0.95}
         metalness={0}
         polygonOffset
-        polygonOffsetFactor={-2}
-        polygonOffsetUnits={-2}
+        polygonOffsetFactor={-3}
+        polygonOffsetUnits={-3}
       />
     </mesh>
   );

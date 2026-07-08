@@ -6,6 +6,10 @@ import { mergeBufferGeometries } from "three-stdlib";
 import { useMetroStore } from "@/stores/useMetroStore";
 import type { PolyItem } from "@/types/city";
 
+// Flat map layers (greenery < water < roads) are stacked just above the
+// ground plane and rendered as depth decals: each gets a progressively
+// stronger polygonOffset so depth ordering is resolved at the rasterizer,
+// which stays stable at any camera distance (no z-fighting shimmer).
 const GREEN_Z = 0.3;
 const TREE_CAP = 3200;
 const TREE_AREA_PER = 1400; // one tree per this many m^2 of park/forest
@@ -183,7 +187,14 @@ export default function Greenery() {
     <group name="greenery">
       {groundGeo && (
         <mesh geometry={groundGeo} position={[0, 0, GREEN_Z]} receiveShadow>
-          <meshStandardMaterial vertexColors roughness={1} metalness={0} />
+          <meshStandardMaterial
+            vertexColors
+            roughness={1}
+            metalness={0}
+            polygonOffset
+            polygonOffsetFactor={-1}
+            polygonOffsetUnits={-1}
+          />
         </mesh>
       )}
       {treeMatrices.length > 0 && (
