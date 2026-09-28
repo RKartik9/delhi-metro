@@ -5,7 +5,9 @@ import * as THREE from "three";
 import { mergeBufferGeometries } from "three-stdlib";
 import { useFrame } from "@react-three/fiber";
 import { useMetroStore } from "@/stores/useMetroStore";
+import { computeAtmosphere } from "@/utils/atmosphere";
 import type { BuildingItem } from "@/types/city";
+import { applyFacadeShader, createFacadeUniforms } from "./facadeShader";
 
 /** Base distance (m) beyond which building tiles are hidden. Scales up with
  * camera altitude so the city stays visible in zoomed-out overviews. */
@@ -13,6 +15,12 @@ const CULL_DIST = 19_000;
 const CULL_DIST_MAX = 50_000;
 
 const _tmp = new THREE.Color();
+
+/** Shared facade uniforms (one Buildings instance per scene). */
+const facadeUniforms = createFacadeUniforms();
+function setNight(v: number) {
+  facadeUniforms.uNight.value = v;
+}
 
 /** Stable pseudo-random in [0,1) from a building's centroid. */
 function hash(x: number, y: number): number {
@@ -64,14 +72,23 @@ function extrude(item: BuildingItem): THREE.BufferGeometry | null {
     geo.computeVertexNormals();
     const [cx, cy] = centroid(item.r);
     const col = buildingColor(item, cx, cy);
+    const seed = hash(cx + 0.37, cy - 0.61);
     const vc = geo.attributes.position.count;
     const colors = new Float32Array(vc * 3);
+    // Per-building (seed, height) consumed by the procedural facade shader.
+    const info = new Float32Array(vc * 2);
     for (let i = 0; i < vc; i++) {
       colors[i * 3] = col.r;
       colors[i * 3 + 1] = col.g;
       colors[i * 3 + 2] = col.b;
+      info[i * 2] = seed;
+      info[i * 2 + 1] = item.h;
     }
     geo.setAttribute("color", new THREE.BufferAttribute(colors, 3));
+    geo.setAttribute("aBuilding", new THREE.BufferAttribute(info, 2));
+    // ExtrudeGeometry emits UVs we never read; dropping them keeps the merged
+    // tile buffers smaller.
+    geo.deleteAttribute("uv");
     return geo;
   } catch {
     return null;
@@ -165,16 +182,22 @@ export default function Buildings() {
     return out;
   }, [city]);
 
-  const material = useMemo(
-    () =>
-      new THREE.MeshStandardMaterial({
-        vertexColors: true,
-        roughness: 0.82,
-        metalness: 0.05,
-        flatShading: true,
-      }),
-    []
-  );
+  const material = useMemo(() => {
+    const m = new THREE.MeshStandardMaterial({
+      vertexColors: true,
+      roughness: 0.82,
+      metalness: 0.05,
+      flatShading: true,
+    });
+    applyFacadeShader(m, facadeUniforms);
+    return m;
+  }, []);
+
+  // Lit windows follow the time of day.
+  const timeOfDay = useMetroStore((s) => s.timeOfDay);
+  useEffect(() => {
+    setNight(1 - computeAtmosphere(timeOfDay).day);
+  }, [timeOfDay]);
 
   useEffect(() => {
     const geoms = tiles.map((t) => t.geometry);

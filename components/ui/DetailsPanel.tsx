@@ -1,8 +1,9 @@
 "use client";
 
 import { AnimatePresence, motion } from "framer-motion";
-import { X, ArrowLeftRight, LocateFixed, Layers } from "lucide-react";
+import { X, ArrowLeftRight, LocateFixed, Layers, Footprints } from "lucide-react";
 import { useMetroStore } from "@/stores/useMetroStore";
+import { isInDetailZone } from "@/utils/streetSpawn";
 import type { MetroLine, Station, StationLayout } from "@/types/metro";
 
 const LAYOUT_COLOR: Record<StationLayout, string> = {
@@ -138,10 +139,14 @@ function StationDetails({ station }: { station: Station }) {
   const data = useMetroStore((s) => s.data)!;
   const selectLine = useMetroStore((s) => s.selectLine);
   const hoverLine = useMetroStore((s) => s.hoverLine);
+  const enterStreetView = useMetroStore((s) => s.enterStreetView);
 
   const lines = station.lines
     .map((id) => data.linesById[id])
     .filter(Boolean) as MetroLine[];
+
+  const [sx, sy] = station.position;
+  const walkable = isInDetailZone(sx, sy);
 
   return (
     <>
@@ -167,6 +172,18 @@ function StationDetails({ station }: { station: Station }) {
             <Chip icon={<ArrowLeftRight className="h-3 w-3" />}>Interchange</Chip>
           )}
         </div>
+        {walkable && (
+          <button
+            type="button"
+            onClick={() =>
+              enterStreetView({ x: sx + 30, y: sy - 30, lookAt: [sx, sy] })
+            }
+            className="mt-3 flex w-full items-center justify-center gap-2 rounded-xl bg-[var(--ui-active)] px-3 py-2 text-[12px] font-medium text-[var(--ui-fg)] transition-colors hover:bg-[var(--ui-hover)]"
+          >
+            <Footprints className="h-3.5 w-3.5" />
+            Street view here
+          </button>
+        )}
       </header>
 
       <div className="border-t border-[var(--ui-border)] px-4 py-3">

@@ -1,14 +1,24 @@
 "use client";
 
-import { Play, Pause, Gauge, Orbit, Video, Layers, TrainFront } from "lucide-react";
+import {
+  Play,
+  Pause,
+  Gauge,
+  Orbit,
+  Video,
+  Layers,
+  TrainFront,
+  Footprints,
+} from "lucide-react";
 import type { CSSProperties } from "react";
 import { useMetroStore, type CameraMode } from "@/stores/useMetroStore";
 
-const MODES: { id: CameraMode; label: string; icon: React.ReactNode }[] = [
-  { id: "orbit", label: "Orbit", icon: <Orbit className="h-3.5 w-3.5" /> },
-  { id: "top", label: "Top", icon: <Layers className="h-3.5 w-3.5" /> },
-  { id: "fly", label: "Fly", icon: <Video className="h-3.5 w-3.5" /> },
-  { id: "follow", label: "Follow", icon: <TrainFront className="h-3.5 w-3.5" /> },
+const MODES: { id: CameraMode; label: string; icon: React.ReactNode; hint: string }[] = [
+  { id: "orbit", label: "Orbit", icon: <Orbit className="h-3.5 w-3.5" />, hint: "O" },
+  { id: "top", label: "Top", icon: <Layers className="h-3.5 w-3.5" />, hint: "T" },
+  { id: "fly", label: "Fly", icon: <Video className="h-3.5 w-3.5" />, hint: "C" },
+  { id: "follow", label: "Follow", icon: <TrainFront className="h-3.5 w-3.5" />, hint: "V" },
+  { id: "street", label: "Street", icon: <Footprints className="h-3.5 w-3.5" />, hint: "G" },
 ];
 
 /** Bottom-center transport: animation play/pause, train speed, camera modes. */
@@ -20,8 +30,14 @@ export default function PlaybackBar() {
   const cameraMode = useMetroStore((s) => s.cameraMode);
   const setCameraMode = useMetroStore((s) => s.setCameraMode);
   const clearSelection = useMetroStore((s) => s.clearSelection);
+  const enterStreetView = useMetroStore((s) => s.enterStreetView);
 
   const selectMode = (mode: CameraMode) => {
+    if (mode === "street") {
+      // Street view resolves its own spawn (map focus or Rajiv Chowk).
+      if (cameraMode !== "street") enterStreetView();
+      return;
+    }
     // Follow keeps the current line selection (it chases a train on that line);
     // the other modes drop the selection so the framing actually changes.
     if (mode !== "follow") clearSelection();
@@ -76,7 +92,7 @@ export default function PlaybackBar() {
                 key={m.id}
                 type="button"
                 onClick={() => selectMode(m.id)}
-                title={`${m.label} camera`}
+                title={`${m.label} camera (${m.hint})`}
                 className={
                   "flex items-center gap-1.5 rounded-lg px-2.5 py-1.5 text-[11px] font-medium transition-colors " +
                   (active

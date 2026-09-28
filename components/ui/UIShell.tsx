@@ -10,6 +10,7 @@ import PlaybackBar from "./PlaybackBar";
 import Minimap from "./Minimap";
 import RoutePlanner from "./RoutePlanner";
 import WorldControls from "./WorldControls";
+import StreetHUD from "./StreetHUD";
 
 /**
  * The full HUD overlay: composes every glassmorphism panel over the 3D canvas
@@ -20,6 +21,9 @@ export default function UIShell() {
   const status = useMetroStore((s) => s.status);
   const error = useMetroStore((s) => s.error);
   const theme = useMetroStore((s) => s.theme);
+  // Street view keeps the HUD minimal (Earth-style): only the transport bar,
+  // minimap and the street readout stay on screen.
+  const street = useMetroStore((s) => s.cameraMode === "street");
 
   return (
     <div
@@ -36,17 +40,22 @@ export default function UIShell() {
             animate={{ opacity: 1 }}
             transition={{ duration: 0.4 }}
           >
-            <div className="absolute left-1/2 top-20 -translate-x-1/2 lg:top-4">
-              <RoutePlanner />
-            </div>
-            <div className="absolute left-4 top-20 hidden md:block">
-              <LinesPanel />
-            </div>
-            <div className="hidden md:contents">
-              <DetailsPanel />
-            </div>
+            {!street && (
+              <>
+                <div className="absolute left-1/2 top-20 -translate-x-1/2 lg:top-4">
+                  <RoutePlanner />
+                </div>
+                <div className="absolute left-4 top-20 hidden md:block">
+                  <LinesPanel />
+                </div>
+                <div className="hidden md:contents">
+                  <DetailsPanel />
+                </div>
+                <WorldControls />
+              </>
+            )}
+            <AnimatePresence>{street && <StreetHUD key="street-hud" />}</AnimatePresence>
             <PlaybackBar />
-            <WorldControls />
             <div className="hidden sm:block">
               <Minimap />
             </div>

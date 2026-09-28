@@ -9,6 +9,8 @@ import { layoutHeight } from "@/utils/lineCurve";
 const dummy = new THREE.Object3D();
 
 const RING_Z = 1.6; // glow ring hovers just above the ground plane
+/** Street view: the 12 m glow spheres / 26 m rings shrink to human scale. */
+const STREET_SCALE = 0.25;
 
 /**
  * Renders all stations as two instanced meshes for performance:
@@ -70,14 +72,18 @@ export default function StationMarkers() {
     rings.computeBoundingSphere();
   }, [items, count]);
 
-  // Animate the ring pulse.
+  // Animate the ring pulse; shrink everything to human scale in street view.
+  const appliedStreet = useRef(false);
   useFrame(({ clock }) => {
     const rings = ringsRef.current;
+    const nodes = nodesRef.current;
     if (!rings || count === 0) return;
+    const street = useMetroStore.getState().cameraMode === "street";
+    const k = street ? STREET_SCALE : 1;
     const t = clock.elapsedTime;
     for (let i = 0; i < count; i++) {
       const it = items[i];
-      const pulse = it.scale * (1 + 0.25 * Math.sin(t * 2 + it.phase));
+      const pulse = k * it.scale * (1 + 0.25 * Math.sin(t * 2 + it.phase));
       dummy.rotation.set(0, 0, 0);
       dummy.position.set(it.x, it.y, RING_Z);
       dummy.scale.setScalar(pulse);
@@ -85,6 +91,20 @@ export default function StationMarkers() {
       rings.setMatrixAt(i, dummy.matrix);
     }
     rings.instanceMatrix.needsUpdate = true;
+
+    if (nodes && appliedStreet.current !== street) {
+      appliedStreet.current = street;
+      for (let i = 0; i < count; i++) {
+        const it = items[i];
+        dummy.rotation.set(0, 0, 0);
+        // Street: float as a small beacon just above the entrance / deck.
+        dummy.position.set(it.x, it.y, street ? Math.max(it.z, 0) + 10 : it.z);
+        dummy.scale.setScalar(k * it.scale);
+        dummy.updateMatrix();
+        nodes.setMatrixAt(i, dummy.matrix);
+      }
+      nodes.instanceMatrix.needsUpdate = true;
+    }
   });
 
   const stationAt = (instanceId: number | undefined) => {

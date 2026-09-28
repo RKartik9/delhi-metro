@@ -5,6 +5,7 @@ import * as THREE from "three";
 import { useFrame, useThree } from "@react-three/fiber";
 import { useMetroStore } from "@/stores/useMetroStore";
 import { followTarget } from "@/utils/followTarget";
+import { streetRig } from "@/utils/streetRig";
 
 // Minimal shape of the drei/three-stdlib OrbitControls we rely on.
 interface OrbitLike {
@@ -26,6 +27,11 @@ const DEFAULT_POS = new THREE.Vector3(0, -4500, 3200);
 /** Chase-camera offsets in follow mode (meters). */
 const FOLLOW_BACK = 90;
 const FOLLOW_UP = 42;
+
+/** Lift-off after street view: bird's-eye distance above where you stood. */
+const STREET_EXIT_DIST = 500;
+/** How far ahead of the eye the orbit target is seeded on street exit. */
+const STREET_EXIT_AHEAD = 40;
 
 /** Distance (meters) below which an animated fly-to is considered complete. */
 const ARRIVE_EPS = 25;
@@ -62,14 +68,30 @@ export default function CameraController() {
   const goalPos = useRef(new THREE.Vector3().copy(DEFAULT_POS));
   const goalTarget = useRef(new THREE.Vector3().copy(DEFAULT_TARGET));
   const animating = useRef(false);
+  const prevMode = useRef(mode);
+  const pendingStreetExit = useRef(false);
 
   // Compute a new goal whenever the selection or mode changes.
   useEffect(() => {
+    const cameFromStreet = prevMode.current === "street" && mode !== "street";
+    prevMode.current = mode;
+
+    // The street rig owns the camera; nothing to animate here.
+    if (mode === "street") {
+      animating.current = false;
+      return;
+    }
+
     let center = DEFAULT_TARGET.clone();
     let pos = DEFAULT_POS.clone();
     const fovRad = (camera.fov * Math.PI) / 180;
 
-    if (route && data) {
+    if (cameFromStreet && !route && !selectedStationId && !selectedLineId) {
+      // Lift off to a 3/4 view above the spot where the user was standing.
+      center = new THREE.Vector3(streetRig.position.x, streetRig.position.y, 0);
+      pos = center.clone().add(DIR.clone().multiplyScalar(STREET_EXIT_DIST));
+      pendingStreetExit.current = true;
+    } else if (route && data) {
       const pts = route.stationIds
         .map((id) => data.stationsById[id])
         .filter(Boolean)
@@ -105,6 +127,24 @@ export default function CameraController() {
     animating.current = true;
   }, [data, mode, selectedStationId, selectedLineId, route, camera]);
 
+  // Leaving street view: MapControls has just (re)mounted with its target at
+  // the origin. Seed the target directly ahead of the eye so its first
+  // update() reproduces the street view exactly, then the lift-off lerp runs.
+  useEffect(() => {
+    if (!controls || mode === "street") return;
+    const p = streetRig.position;
+    if (pendingStreetExit.current || camera.position.distanceTo(p) < 1) {
+      pendingStreetExit.current = false;
+      controls.target.set(
+        p.x + Math.cos(streetRig.yaw) * STREET_EXIT_AHEAD,
+        p.y + Math.sin(streetRig.yaw) * STREET_EXIT_AHEAD,
+        p.z + Math.sin(streetRig.pitch) * STREET_EXIT_AHEAD
+      );
+      controls.update();
+      animating.current = true;
+    }
+  }, [controls, mode, camera]);
+
   // Hand camera control back to the user as soon as they start dragging.
   useEffect(() => {
     if (!controls) return;
@@ -117,7 +157,12 @@ export default function CameraController() {
 
   useFrame((_, dt) => {
     if (!controls) return;
+    if (useMetroStore.getState().cameraMode === "street") return;
     const step = Math.min(dt, 0.05);
+
+    // Remember what the aerial camera is looking at so "Street" can drop in there.
+    streetRig.mapFocus.copy(controls.target);
+    streetRig.mapFocusDist = camera.position.distanceTo(controls.target);
 
     // Follow mode: chase the followed train continuously, from just behind it.
     if (useMetroStore.getState().cameraMode === "follow" && followTarget.hasTarget) {

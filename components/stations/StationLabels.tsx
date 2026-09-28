@@ -12,6 +12,12 @@ const REVEAL_DIST = 2_600;
 /** Interchange labels stay visible until the camera is very far out (meters). */
 const INTERCHANGE_DIST = 14_000;
 
+/** Street view: labels shrink to signpost size and sit lower over the entrance. */
+const STREET_SCALE = 0.04;
+const STREET_LABEL_Z = 12;
+const STREET_REVEAL_DIST = 600;
+const STREET_INTERCHANGE_DIST = 1_800;
+
 /**
  * Station name labels that always face the camera and reveal based on distance
  * (interchanges are visible from far; local stations appear as you zoom in),
@@ -26,14 +32,21 @@ export default function StationLabels() {
 
   useFrame(() => {
     if (!stations) return;
+    const street = useMetroStore.getState().cameraMode === "street";
+    const scale = street ? STREET_SCALE : 1;
+    const z = street ? STREET_LABEL_Z : LABEL_Z;
+    const far = street ? STREET_INTERCHANGE_DIST : INTERCHANGE_DIST;
+    const near = street ? STREET_REVEAL_DIST : REVEAL_DIST;
     const arr = refs.current;
     for (let i = 0; i < arr.length; i++) {
       const o = arr[i];
       if (!o) continue;
+      o.position.z = z;
       const d = camera.position.distanceTo(o.position);
-      const visible = stations[i].interchange
-        ? d < INTERCHANGE_DIST
-        : d < REVEAL_DIST;
+      // Aerial labels are sized for the fly-to distance (~600 m); shrink them
+      // when the camera gets closer (e.g. lifting off from street view).
+      o.scale.setScalar(street ? scale : THREE.MathUtils.clamp(d / 600, 0.15, 1));
+      const visible = stations[i].interchange ? d < far : d < near;
       o.visible = visible;
       if (visible) o.quaternion.copy(camera.quaternion);
     }

@@ -4,10 +4,26 @@ import { loadCityData } from "@/utils/loadCity";
 import { findRoute } from "@/utils/router";
 import type { MetroData, RoutePlan } from "@/types/metro";
 import type { CityData, CityLayers } from "@/types/city";
+import {
+  defaultStreetSpawn,
+  resolveStreetSpawn,
+  type StreetSpawn,
+} from "@/utils/streetSpawn";
+import { streetRig, MAP_FOCUS_MAX_DIST } from "@/utils/streetRig";
 
 export type LoadStatus = "idle" | "loading" | "ready" | "error";
 export type Theme = "day" | "night";
-export type CameraMode = "orbit" | "top" | "follow" | "fly" | "free";
+export type CameraMode = "orbit" | "top" | "follow" | "fly" | "free" | "street";
+
+/** Where to drop into street view. */
+export interface StreetEntry {
+  x: number;
+  y: number;
+  /** Optional explicit heading (radians, 0 = east). */
+  yaw?: number;
+  /** Optional point to face after landing (scene meters). */
+  lookAt?: [number, number];
+}
 
 interface MetroState {
   // Data
@@ -42,6 +58,8 @@ interface MetroState {
   // Environment & view
   theme: Theme;
   cameraMode: CameraMode;
+  /** Resolved spawn for the street-level camera (set by enterStreetView). */
+  streetSpawn: StreetSpawn | null;
 
   // Animation
   animationPlaying: boolean;
@@ -65,6 +83,13 @@ interface MetroState {
   setTheme: (theme: Theme) => void;
   toggleTheme: () => void;
   setCameraMode: (mode: CameraMode) => void;
+  /**
+   * Drop into street view. With no argument, lands where the aerial camera
+   * was looking (if inside the detailed core) or at Rajiv Chowk.
+   */
+  enterStreetView: (at?: StreetEntry) => void;
+  /** Leave street view; the camera lifts back to a bird's-eye. */
+  exitStreetView: () => void;
   setAnimationPlaying: (playing: boolean) => void;
   toggleAnimation: () => void;
   setTrainSpeed: (speed: number) => void;
@@ -108,6 +133,7 @@ export const useMetroStore = create<MetroState>((set, get) => ({
 
   theme: "night",
   cameraMode: "orbit",
+  streetSpawn: null,
 
   animationPlaying: true,
   trainSpeed: 1,
@@ -183,6 +209,28 @@ export const useMetroStore = create<MetroState>((set, get) => ({
       return { theme, timeOfDay: theme === "day" ? 0.5 : 0.0 };
     }),
   setCameraMode: (mode) => set({ cameraMode: mode }),
+  enterStreetView: (at) => {
+    const { city, data } = get();
+    // Drop in where the aerial camera was looking only when it was zoomed in
+    // close; from the overview, Rajiv Chowk is the default entry point.
+    const focus =
+      streetRig.mapFocusDist < MAP_FOCUS_MAX_DIST
+        ? ([streetRig.mapFocus.x, streetRig.mapFocus.y] as [number, number])
+        : null;
+    const spawn = at
+      ? resolveStreetSpawn(city, at.x, at.y, at.lookAt, at.yaw)
+      : defaultStreetSpawn(city, data, focus);
+    set({
+      cameraMode: "street",
+      streetSpawn: spawn,
+      selectedLineId: null,
+      selectedStationId: null,
+    });
+  },
+  exitStreetView: () => {
+    if (get().cameraMode !== "street") return;
+    set({ cameraMode: "orbit" });
+  },
 
   setAnimationPlaying: (playing) => set({ animationPlaying: playing }),
   toggleAnimation: () => set((s) => ({ animationPlaying: !s.animationPlaying })),
